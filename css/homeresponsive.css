@@ -17,7 +17,7 @@
     }
 }
 
-@media all and (max-width: 1340px) {
+@media all and (max-width: 1346px) {
     #menu li:hover #show_1 {
         display: block;
     }
@@ -40,7 +40,7 @@
     }
 }
 
-@media all and (max-width: 1224px) {
+@media all and (max-width: 1230px) {
     #menu li:hover #show_2 {
         display: block;
     }
@@ -50,7 +50,7 @@
     }
 }
 
-@media all and (max-width: 1090px) {
+@media all and (max-width: 1096px) {
     #menu li:hover #show_3 {
         display: block;
     }
