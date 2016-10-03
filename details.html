@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Details</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/details.css">
+		<link rel="stylesheet" type="text/css" href="css/detailsresponsive.css">
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'
+		rel='stylesheet' type='text/css'>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script>
+			function myFunction(x, id) {
+				x.classList.toggle("change");
+				var e = document.getElementById(id);
+				if(e.style.display == 'block')
+				  e.style.display = 'none';
+				else
+				  e.style.display = 'block';
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Menu va header danh cho may tinh -->
+    <div class="clear"></div>
+    <div id="header">
+      <div id="top-bar">
+        <div id="logo">
+          <img src="images/logo.png">
+          <div id="text_logo">
+            <span>Adobe Template</span>
+          </div>
+        </div>
+        <div id="network">
+          <a href="#"><img src="images/facebook.png"></a>
+          <a href="#"><img src="images/googleplus.png", class="img"></a>
+          <a href="#"><img src="images/stumbleupon.png", class="img"></a>
+          <a href="#"><img src="images/twitter.png", class="img"></a>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div id="menu">
+      <ul>
+        <li><a href="#"><img src="images/Psicon.png">
+          <p>Photoshop</p>
+          </a>
+        </li>
+        <li><a href="#"><img src="images/Enicon.png">
+          <p>Encore</p>
+          </a>
+        </li>
+        <li><a href="#"><img src="images/Aeicon.png">
+          <p>Affter Effects</p>
+          </a>
+        </li>
+        <li><a href="#"><img src="images/Pricon.png">
+          <p>Premiere Pro</p>
+          </a>
+        </li>
+        <li><a href="#"><img src="images/Idicon.png">
+          <p>InDesign</p>
+          </a>
+        </li>
+        <li class="respon-4">
+          <a href="#"><img src="images/Flicon.png">
+          <p>Flash</p>
+          </a>
+        </li>
+        <li class="respon-3">
+          <a href="#"><img src="images/Fbicon.png">
+          <p>Flash Builder</p>
+          </a>
+        </li>
+        <li class="respon-2">
+          <a href="#"><img src="images/Aiicon.png">
+          <p>Illustrator</p>
+          </a>
+        </li>
+        <li class="respon-1">
+          <a href="#"><img src="images/Bricon.png">
+          <p>Bridge</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>More</p>
+          </a>
+          <ul style="margin-top: 13px;">
+              <li><a href="#"><img src="images/Fwicon.png">
+                  <p>Fireworks</p>
+                </a>
+              </li>
+              <li><a href="#">
+                  <img src="images/Dwicon.png">
+                  <p>Dreamweaver</p>
+                </a>
+              </li>
+              <li><a href="#">
+                  <img src="images/Auicon.png">
+                  <p>Audition</p>
+                </a>
+              </li>
+              <li><a href="#">
+                  <img src="images/Sgicon.png">
+                  <p>SpeedGrade</p>
+                </a>
+              </li>
+              <li><a href="#">
+                  <img src="images/Plicon.png">
+                  <p>Prelude</p>
+                </a>
+              </li>
+              <li><a href="#">
+                  <img src="images/Lricon.png">
+                  <p>Lightroom</p>
+                </a>
+              </li>
+              <li id="show_1">
+                <a href="#"><img src="images/Bricon.png">
+                <p>Bridge</p>
+                </a>
+              </li>
+
+              <li id="show_2">
+                <a href="#"><img src="images/Aiicon.png">
+                <p>Illustrator</p>
+                </a>
+              </li>
+
+              <li id="show_3">
+                <a href="#"><img src="images/Fbicon.png">
+                <p>Flash Builder</p>
+                </a>
+              </li>
+
+              <li id="show_4">
+                <a href="#"><img src="images/Flicon.png">
+                <p>Flash</p>
+                </a>
+              </li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+    <!-- Menu va header danh cho dien thoai -->
+      <!-- Header -->
+      <div id="hearder-phone">
+        <div class="cl"></div>
+        <div id="logo-phone">
+          <img src="images/logo.png">
+        </div>
+        <div class="show-menu" onclick="myFunction(this, 'menu-phone')">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <div id="user-phone">
+          <a href="#"><img src="images/user.png"></a>
+        </div>
+      </div>
+      <!-- end -->
+      <!-- Menu -->
+      <div id="menu-phone">
+        <div class="menu-left">
+          <ul>
+            <li><a href="#"><img src="images/Psicon.png">
+              <span>Photoshop</span>
+            </a>
+            </li>
+            <li><a href="#"><img src="images/Enicon.png">
+              <span>Encore</span>
+              </a>
+            </li>
+            <li><a href="#"><img src="images/Aeicon.png">
+              <span>Affter Effects</span>
+              </a>
+            </li>
+            <li><a href="#"><img src="images/Pricon.png">
+              <span>Premiere Pro</span>
+              </a>
+            </li>
+            <li><a href="#"><img src="images/Idicon.png">
+              <span>InDesign</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><img src="images/Flicon.png">
+              <span>Flash</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><img src="images/Fbicon.png">
+              <span>Flash Builder</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="menu-right">
+        <ul>
+          <li>
+            <a href="#"><img src="images/Aiicon.png">
+            <span>Illustrator</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"><img src="images/Bricon.png">
+            <span>Bridge</span>
+            </a>
+          </li>
+          <li><a href="#"><img src="images/Fwicon.png">
+                <span>Fireworks</span>
+              </a>
+          </li>
+          <li><a href="#">
+              <img src="images/Dwicon.png">
+              <span>Dreamweaver</span>
+            </a>
+          </li>
+          <li><a href="#">
+              <img src="images/Auicon.png">
+              <span>Audition</span>
+            </a>
+          </li>
+          <li><a href="#">
+              <img src="images/Sgicon.png">
+              <span>SpeedGrade</span>
+            </a>
+          </li>
+          <li><a href="#">
+              <img src="images/Plicon.png">
+              <span>Prelude</span>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    <!-- end -->
+
+
+
+	<div class="clear"></div>
+	<div id="main-details">
+		<div id="detail-left">
+			<div id="n-image">
+				<div id="img-tittle">
+					<p id="n-decription"><span>Super moon beauty </span>Free Photo</p>
+				</div>
+				<div id="phone-details">
+					<a href="#">Download</a>
+				</div>
+				<a href="#"><img src="https://dialyvacuocsong.files.wordpress.com/2014/07/shoot-stars-full-moon.jpeg" width="100%" height="auto"></a>
+			</div>
+			<div id="n-information">
+				<div id="information-top">
+					<a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQANpPsH-XsGltwine_k5ywVSvgtEw8b_398_68zH_oJDmj_MGDVg"
+								width="8%" height="auto"></a>
+					<p>DTUI Team<br>
+					<span>Photography / Animals, Plants && Nature/ Fungi
+					-_- -_- -_-</span></p>
+				</div>
+				<div id="information-center">
+					<p>These are some of the images that we found within the public domain for your
+					"Super Moon Today" keyword. These images will give you an idea of the kind of image(s) to place in your articles and wesbites.</p>
+				</div>
+				<div id="information-bottom">
+					<ul>
+						<a href="#"><li>Background</li></a>
+						<a href="#"><li>Abstract background</li></a>
+						<a href="#"><li>Abstract</li></a>
+						<a href="#"><li>Watercolor</li></a>
+						<a href="#"><li>Hand</li></a>
+						<a href="#"><li>Texture</li></a>
+						<a href="#"><li>Art</li></a>
+						<a href="#"><li>Modern</li></a>
+						<a href="#"><li>Backdrop</li></a>
+						<a href="#"><li>Style</li></a>
+						<a href="#"><li>Texture background</li></a>
+						<a href="#"><li>Stains</li></a>
+						<a href="#"><li>Atistic</li></a>
+						<a href="#"><li>Background texture</li></a>
+						<a href="#"><li>Hand painted</li></a>
+						<a href="#"><li>Painted</li></a>
+						<a href="#"><li>Watery</li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="comment">
+				<p><span>DTUI Team</span> -Add a Comment</p>
+				<div id="noname">
+				<a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQANpPsH-XsGltwine_k5ywVSvgtEw8b_398_68zH_oJDmj_MGDVg"
+								width="8%" height="auto"></a>
+				<input type="textarea" name="cmt"></input>
+				</div>
+			</div>
+
+			<div class="cmt-demo">
+				<a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQANpPsH-XsGltwine_k5ywVSvgtEw8b_398_68zH_oJDmj_MGDVg"
+								width="8%" height="auto"></a>
+				<div class="ncmt-demo">
+					<p><a href="#">Huu Minh Tran</a> <span>Sep 29, 2016 | Hobbysit Digital Artist<span></p>
+					<p class="no-display">Oh my god, this is Aresome!<br>Really love...<br>
+					And great work on the details, designs, posess, expression, layout and coloring!</p>
+					<p class="cmt-phone">Oh my god, this is Aresome...<a href="#">view all >></a></p>
+				</div>
+			</div>
+			<div class="cmt-demo">
+				<a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQANpPsH-XsGltwine_k5ywVSvgtEw8b_398_68zH_oJDmj_MGDVg"
+								width="8%" height="auto"></a>
+				<div class="ncmt-demo">
+					<p><a href="#">Fizz, Ngoc Nhu</a> <span>Sep 29, 2016 | Hobbysit Digital Artist<span></p>
+					<p class="no-display">Oh my god, this is Aresome!<br>Really love...<br>
+					And great work on the details, designs, posess, expression, layout and coloring!</p>
+					<p class="cmt-phone">Oh my god, this is Aresome...<a href="#">view all >></a></p>
+				</div>
+			</div>
+			<div class="cmt-demo">
+				<a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQANpPsH-XsGltwine_k5ywVSvgtEw8b_398_68zH_oJDmj_MGDVg"
+								width="8%" height="auto"></a>
+				<div class="ncmt-demo">
+					<p><a href="#">Truong Nhung</a> <span>Sep 29, 2016 | Hobbysit Digital Artist<span></p>
+					<p class="no-display">Oh my god, this is Aresome!<br>Really love...<br>
+					And great work on the details, designs, posess, expression, layout and coloring!</p>
+					<p class="cmt-phone">Oh my god, this is Aresome...<a href="#">view all >></a></p>
+				</div>
+			</div>
+			<div class="cmt-demo">
+				<a href="#"><img src="images/logo.png" border="1px solid black"
+								width="8%" height="auto"></a>
+				<div class="ncmt-demo">
+					<p><a href="#" id="red">DTUI Team</a> <span>Sep 29, 2016 | Hobbysit Digital Artist<span></p>
+					<p class="no-display">Wow, all of you are wonderful and so amazing!<br>They make me more motivated to innovation and develo it.<br>
+					Love you guys, so much! Chutttttt...</p>
+					<p class="cmt-phone">Wow, all of you are wonderful and...<a href="#">view all >></a></p>
+				</div>
+			</div>
+			<div class="cmt-demo">
+				<a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQANpPsH-XsGltwine_k5ywVSvgtEw8b_398_68zH_oJDmj_MGDVg"
+								width="8%" height="auto"></a>
+				<div class="ncmt-demo">
+					<p><a href="#">Jopen Nguyen</a> <span>Sep 29, 2016 | Hobbysit Digital Artist<span></p>
+					<p class="no-display">Oh my god, this is Aresome!<br>Really love...<br>
+					And great work on the details, designs, posess, expression, layout and coloring!</p>
+					<p class="cmt-phone">Oh my god, this is Aresome...<a href="#">view all >></a></p>
+				</div>
+			</div>
+		</div>
+		<div id="phone-search">
+				<input type="text"></input>
+				<a href="#"><button>Search</button></a>
+			</div>
+		<div id="detail-right">
+			<div id="n-search">
+				<input type="text"></input>
+				<a href="#"><button></button></a>
+			</div>
+			<div id="img-size">
+				<p>File type: JPG<br>Submitted on September 27, 2025<br>Size: 5MB<br>Resolution: 810 x 640</p>
+				<div id="buy">
+					<!--<input type="button" name="buy" value="Buy this print"></input> -->
+					<a href="#">Buy this print</a>
+				</div>
+				<div id="download">
+					<!--<input type="button" name="down" value="Download"></input> -->
+					<a href="#">Download</a>
+				</div>
+			</div>
+			<div class="more-Dtui">
+				<p>More from <span><a href="#">DTUI Team</a><span></p>
+				<div class="Dtui-box">
+				  <a href="#"><img src="http://i.huffpost.com/gen/1198611/images/o-SUPERMOON-JUNE-2013-facebook.jpg"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/564x/74/34/82/743482babd6aea79e0140bb703c4567b.jpg"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjfby-9mSNwvqxagj4de_VsdVIRCZ06CD8NRoENCSLG5Csaa36Ig"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgacczPG64DBAbeXETaO2I41ZJhsRT0XAATtHe1LBJ9j2hXUkE"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3uu_NuVAXJHXz4wU4nbfKAzH_4NuNjmHXAcyy0RT9aN-k1yZJ"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://drscdn.500px.org/photo/38616242/m%3D900/bedd116cb661c43277bdbc0586730f87"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/originals/af/8f/d2/af8fd200243765c14a3868cf3ec269aa.jpg"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/564x/7c/0a/c9/7c0ac94b05914f7c8f0c52158facb2ce.jpg"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/236x/55/62/01/556201fe91b02d1d55c65f8ed78a56ce.jpg"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<a href="#" id="vg">View Gallery >></a>
+			</div>
+			<div class="more-Dtui">
+				<p>More from <span><a href="#">AdobeTemplates</a><span></p>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtIBUsh2bhA9eerE6PG7_RSCoXF_4oSEQ48aQ0HtK_gj3QZ7VCDA"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTizQ7nM4ExL8OzfJXpI8yUW28UQP2zS6XcT0Q-yi29t1-q8F4T"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrNr_OTX4XqDkqsqWzWADdSDdh0FjPtwdAFticduMG2Q_zkrtf"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="http://cdn8.staztic.com/app/a/2554/2554339/cold-moon-live-wallpaper-2-4-s-307x512.jpg"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/474x/be/c6/e6/bec6e69656c65438562f8bd67628e5b7.jpg"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/564x/c3/c1/59/c3c1591fc5fc5918f9f36d3f1e6ba69d.jpg"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/236x/5d/51/83/5d5183da83e447cf05679746ec5af10f.jpg"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/236x/79/1c/50/791c50cd2042fb2f0be000e481d73870.jpg"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<div class="Dtui-box">
+				  <a href="#"><img src="data:image/jpeg;base64,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"></a>
+				  <div class="dtuiImg-content">
+					  <h2 class="dtuiImg-header">Photoshop</h2>
+					  <p class="dtuiImg-body">
+						<a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+						<a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+						<a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+					  </p>
+					</div>
+				</div>
+				<a href="#" id="vg">View More >></a>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="clear"></div>
+	<div id="footer">
+      <div id="left">
+        <div id="logo-footer">
+          <img src="images/logo.png">
+          <div id="text_footer">
+            <span>Adobe Template</span>
+          </div>
+        </div>
+        <div id="text-intro">
+          <p>Free andobe templaces for andobers</p>
+        </div>
+      </div>
+      <div id="right">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+		<p id="copyright">Copyright &copy 2016 freepik</p>
+      </div>
+
+    </div>
+	</body>
+</html>
