@@ -1,0 +1,31 @@
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'feathericons';
+    src: url('../fonts/feathericons/feathericons.eot?-8is7zf');
+    src: url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
+    url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
+    url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
+    url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriad-pro/MYRIADPRO-REGULAR.OTF');
+}
+
+@font-face {
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriad-pro/MYRIADPRO-BOLD.OTF');
+}
+
+@font-face {
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriad-pro/MYRIADPRO-BOLDIT.OTF');
+}

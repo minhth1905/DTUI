@@ -1,23 +1,13 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Myriad Pro', sans-serif;
 }
 
 #header {
     height: 70px;
     background-color: #ffffff;
     margin: 0;
-}
-
-@font-face {
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'feathericons';
-    src: url('../fonts/feathericons/feathericons.eot?-8is7zf');
-    src: url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
-    url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
-    url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
-    url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
 }
 
 #logo {
@@ -31,7 +21,6 @@ body {
 }
 
 #text_logo span {
-    font-family: 'myFont', sans-serif;
     font-weight: bold;
     font-size: 28.54pt;
     font-style: italic;
@@ -63,23 +52,6 @@ body {
     cursor: pointer;
 }
 
-.text-icon {
-    float: left;
-    font-family: 'myFont', sans-serif;
-    padding-left: 5px;
-    font-size: 16px;
-}
-
-.text-icon a {
-    text-decoration: none;
-    color: black;
-}
-
-.text-icon a:hover {
-    cursor: pointer;
-    color: blue;
-}
-
 #user {
     padding-top: 13px;
     padding-right: 8%;
@@ -94,10 +66,7 @@ body {
     border-radius: 8px;
     background-color: #ff00ff;
     font-size: 18px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-right: 12px;
-    padding-left: 12px;
+    padding: 6px 12px;
     border: 1px;
     text-decoration: none;
     font-weight: bold;
@@ -113,7 +82,7 @@ body {
 #network {
     margin-top: 19px;
     float: right;
-    margin-right: 8%;
+    margin-right: 6%;
 }
 
 #network .img {
@@ -197,8 +166,7 @@ body {
 
 #template {
     width: 1152px;
-    margin: auto;
-    margin-top: 30px;
+    margin: 30px auto auto;
 }
 
 #template img {
@@ -310,6 +278,7 @@ body {
     padding-top: 14px;
     padding-bottom: 14px;
     background-color: #1d60c0;
+    font-weight: bold;
 }
 
 #see_all_a {
@@ -320,19 +289,25 @@ body {
 
 #logo-footer img {
     float: left;
-    padding-top: 29px;
-    padding-left: 8%;
+    margin-top: 35px;
+    margin-left: 8%;
 }
 
 #right {
-    padding-right: 8%;
+    margin-right: 8%;
     float: right;
+}
+
+#copyright {
+    float: right;
+    color: #a3a3a3;
+    font-size: 14px;
 }
 
 #text_footer {
     float: left;
     padding-top: 29px;
-    font-family: 'myFont', sans-serif;
+    font-family: 'feathericons', sans-serif;
     font-weight: bold;
     font-size: 28.54pt;
     font-style: italic;
@@ -342,24 +317,27 @@ body {
 
 #text-intro {
     float: left;
-    padding-top: 32px;
-    padding-left: 20px;
+    margin-top: 32px;
+    margin-left: 15px;
     font-weight: bold;
+    color: #676767;
 }
 
 #right ul {
     list-style-type: none;
     text-align: center;
+    margin-bottom: 5px;
 }
 
 #right a {
     text-decoration: none;
+    color: black;
 }
 
 #right li {
     display: inline-block;
-    padding-right: 15px;
-    padding-top: 32px;
+    margin-left: 20px;
+    margin-top: 32px;
 }
 
 /*sub-menu*/
@@ -371,9 +349,14 @@ body {
     padding: 0;
 }
 
-#menu ul li {
+.menu__item--left {
     float: left;
     position: relative;
+}
+
+#more ul li {
+    float: left;
+    width: inherit;
 }
 
 #menu ul a {
@@ -381,17 +364,23 @@ body {
     color: black;
     display: block;
     font-weight: bold;
-    padding: 8px 20px;
+    margin: 8px 20px;
     /*background:#000;*/
 }
 
-#menu p {
-    float: right;
-    margin-top: 3px;
-    padding-left: 4px;
+#menu img {
+    display: inline;
+    float: left;
 }
 
-#menu ul a:hover {
+#menu p {
+    display: inline;
+    float: left;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+#menu li a:hover, #more li:hover a {
     color: blue;
     cursor: pointer;
 }
@@ -399,6 +388,7 @@ body {
 #more {
     height: 37px;
     width: 90px;
+    float: right;
 }
 
 /*Tam giac more*/
@@ -424,6 +414,10 @@ body {
     color: white;
 }
 
+#more li {
+    clear: both;
+}
+
 #tg-hover {
     width: 0;
     height: 0;
@@ -433,7 +427,6 @@ body {
 }
 
 /*CSS Tạo Menu Cấp 2*/
-
 #menu li ul {
     border-radius: 7px;
     padding: 0;

@@ -4,8 +4,9 @@
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/homeresponsive.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'
-          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'-->
+          <!--rel='stylesheet' type='text/css'>-->
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lt IE 9]>
@@ -33,10 +34,7 @@
         <div id="top-bar">
             <div id="logo">
                 <a href="#">
-                    <img src="images/logo.png">
-                    <div id="text_logo">
-                        <span>Adobe Template</span>
-                    </div>
+                    <img src="images/logo--red.png">
                 </a>
             </div>
             <!--<div id="user">
@@ -60,42 +58,42 @@
     <div class="clear"></div>
     <div id="menu">
         <ul>
-            <li><a href="#"><img src="images/Psicon.png">
+            <li class="menu__item--left"><a href="#"><img src="images/Psicon.png">
                 <p>Photoshop</p>
             </a>
             </li>
-            <li><a href="#"><img src="images/Enicon.png">
+            <li class="menu__item--left"><a href="#"><img src="images/Enicon.png">
                 <p>Encore</p>
             </a>
             </li>
-            <li><a href="#"><img src="images/Aeicon.png">
+            <li class="menu__item--left"><a href="#"><img src="images/Aeicon.png">
                 <p>Affter Effects</p>
             </a>
             </li>
-            <li><a href="#"><img src="images/Pricon.png">
+            <li class="menu__item--left"><a href="#"><img src="images/Pricon.png">
                 <p>Premiere Pro</p>
             </a>
             </li>
-            <li><a href="#"><img src="images/Idicon.png">
+            <li class="menu__item--left"><a href="#"><img src="images/Idicon.png">
                 <p>InDesign</p>
             </a>
             </li>
-            <li class="respon-4">
+            <li class="menu__item--left">
                 <a href="#"><img src="images/Flicon.png">
                     <p>Flash</p>
                 </a>
             </li>
-            <li class="respon-3">
+            <li class="menu__item--left" id="respon-3">
                 <a href="#"><img src="images/Fbicon.png">
                     <p>Flash Builder</p>
                 </a>
             </li>
-            <li class="respon-2">
+            <li class="menu__item--left" id="respon-2">
                 <a href="#"><img src="images/Aiicon.png">
                     <p>Illustrator</p>
                 </a>
             </li>
-            <li class="respon-1">
+            <li class="menu__item--left" id="respon-1">
                 <a href="#"><img src="images/Bricon.png">
                     <p>Bridge</p>
                 </a>
@@ -106,9 +104,24 @@
                         <span class="triangle_down"></span>
                     </p>
                 </a>
-                <ul style="margin-top: 21px;">
+                
+                <ul style="margin-top: 29px;">
+                    <li id="show_1">
+                        <a href="#"><img src="images/Bricon.png">
+                            <p>Bridge</p>
+                        </a>
+                    </li>
+                    <li id="show_2">
+                        <a href="#"><img src="images/Aiicon.png">
+                            <p>Illustrator</p>
+                        </a>
+                    </li>
+                    <li id="show_3">
+                        <a href="#"><img src="images/Fbicon.png">
+                            <p>Flash Builder</p>
+                        </a>
+                    </li>
                     <li>
-                        <p id="tg-hover" style="margin-top: -5px; margin-right: 62%"></p>
                         <a href="#"><img src="images/Fwicon.png">
                             <p>Fireworks</p>
                         </a>
@@ -138,29 +151,6 @@
                         <p>Lightroom</p>
                     </a>
                     </li>
-                    <li id="show_1">
-                        <a href="#"><img src="images/Bricon.png">
-                            <p>Bridge</p>
-                        </a>
-                    </li>
-                    
-                    <li id="show_2">
-                        <a href="#"><img src="images/Aiicon.png">
-                            <p>Illustrator</p>
-                        </a>
-                    </li>
-                    
-                    <li id="show_3">
-                        <a href="#"><img src="images/Fbicon.png">
-                            <p>Flash Builder</p>
-                        </a>
-                    </li>
-                    
-                    <li id="show_4">
-                        <a href="#"><img src="images/Flicon.png">
-                            <p>Flash</p>
-                        </a>
-                    </li>
                 </ul>
             </li>
         </ul>
@@ -170,7 +160,7 @@
     <div id="hearder-phone">
         <div class="cl"></div>
         <div id="logo-phone">
-            <img src="images/logo.png">
+            <img src="images/logo--red--notext.png">
         </div>
         <div class="show-menu" onclick="myFunction(this)">
             <div class="bar1"></div>
@@ -286,7 +276,6 @@
                 <li><a href="#">Trailer</a></li>
                 <li><a href="#">Intro</a></li>
                 <li><a href="#">Avatar</a></li>
-                <li><a href="#">Cover photo</a></li>
             </ul>
         </div>
         <div class="clear"></div>
@@ -616,10 +605,7 @@
     <div id="footer">
         <div id="left">
             <div id="logo-footer">
-                <img src="images/logo.png">
-                <div id="text_footer">
-                    <span>Adobe Template</span>
-                </div>
+                <img src="images/logo--gray.png">
             </div>
             <div id="text-intro">
                 <p>Free templates for everyone</p>
@@ -632,7 +618,11 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <div id="copyright">
+                Copyright © 2016 freepik.com
+            </div>
         </div>
+        
     </div>
 </div>
 </body>
