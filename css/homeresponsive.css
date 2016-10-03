@@ -159,13 +159,12 @@
         text-align: left;
     }
 
-    .menu-left li {
+    .menu-left li, .menu-right li {
         width: auto;
         height: 40px;
         line-height: 40px;
         border-bottom: 1px solid #e8e8e8;
-        padding: 0 0.5em;
-        padding-left: 20%;
+        padding: 0 0.5em 0 15%;
     }
 
     .menu-left li a {
@@ -174,6 +173,8 @@
         font-weight: bold;
         display: block;
     }
+
+
 
     .menu-left li:hover {
         background: #CDE2CD;
@@ -194,14 +195,7 @@
         border-left: 1px solid #CDE2CD;
     }
 
-    .menu-right li {
-        width: auto;
-        height: 40px;
-        line-height: 40px;
-        border-bottom: 1px solid #e8e8e8;
-        padding: 0 0.5em;
-        padding-left: 20%;
-    }
+
 
     .menu-right li a {
         text-decoration: none;
