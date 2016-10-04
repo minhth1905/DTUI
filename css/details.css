@@ -1,95 +1,92 @@
 body {
-  padding: 0;
-  margin: 0;
-  background-color: #fafafa;
-  box-sizing: border-box;
-
+    padding: 0;
+    margin: 0;
+    font-family: 'Myriad Pro', sans-serif;
 }
 
 #header {
-  height: 70px;
-  background-color: #ffffff;
-  margin: 0;
-}
-
-@font-face {
-  font-weight: normal;
-  font-style: normal;
-  font-family: 'feathericons';
-  src:url('../fonts/feathericons/feathericons.eot?-8is7zf');
-  src:url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
-    url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
-    url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
-    url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
+    height: 70px;
+    background-color: #ffffff;
+    margin: 0;
 }
 
 #logo {
-  padding-top: 12px;
-  padding-left: 8%;
-  float: left;
+    margin-top: 12px;
+    margin-left: 8%;
+    float: left;
 }
 
 #text_logo {
-  float: right;
+    float: right;
 }
 
 #text_logo span {
-  font-family: 'myFont';
-  font-weight: bold;
-  font-size: 28.54pt;
-  font-style: italic;
-  color: #d51d24;
-  word-spacing: 0.5px;
+    font-weight: bold;
+    font-size: 28.54pt;
+    font-style: italic;
+    color: #d51d24;
+    word-spacing: 1px;
 }
 
 #menu {
-  height: 40px;
-  padding-left: 6%;
-  background-color: #efefef;
+    height: 37px;
+    padding-left: 6%;
+    padding-right: 6%;
+    background-color: #efefef;
 }
 
 .menu-icon {
-  float: left;
-  padding-top: 11px;
+    float: left;
+    padding-top: 11px;
 }
 
 .index {
-  margin-left: 2.2%;
+    margin-left: 2.2%;
 }
 
 .menu-icon img {
-  float: left;
+    float: left;
 }
 
 .menu-icon img:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
-.text-icon {
-  float: left;
-  font-family: 'myFont';
-  padding-left: 5px;
-  font-size: 16px;
+#user {
+    padding-top: 13px;
+    padding-right: 8%;
+    float: right;
 }
 
-.text-icon a {
-  text-decoration: none;
-  color: black;
+.login {
+    margin-top: 9px;
 }
 
-.text-icon a:hover {
-  cursor: pointer;
-  color: blue;
+.login a {
+    border-radius: 8px;
+    background-color: #ff00ff;
+    font-size: 18px;
+    padding: 6px 12px;
+    border: 1px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+#user-signup {
+    padding-top: 13px;
+    padding-right: 1%;
+    float: right;
 }
 
 #network {
-  padding-right: 8%;
-  padding-top: 19px;
-  float: right;
- }
+    margin-top: 19px;
+    float: right;
+    margin-right: 6%;
+}
 
 #network .img {
-  padding-left: 19px;
+    padding-left: 19px;
 }
 
 .clear {
@@ -524,3 +521,50 @@ body {
 #menu li:hover #show_4 {
   display: none;
 }
+
+#more ul li {
+  float: left;
+  width: inherit;
+}
+
+#more {
+    height: 37px;
+    width: 90px;
+    float: right;
+}
+
+/*Tam giac more*/
+
+.triangle_down {
+    height: 0;
+    width: 0;
+    border-top: 7px solid #c2c2c2;
+    border-left: 5px solid transparent;
+    border-right: 6px solid transparent;
+    margin-left: 34px;
+    padding-top: 3px;
+}
+
+#more:hover {
+    border-radius: 5px;
+    background-color: #3366FF;
+    color: white;
+    cursor: pointer;
+}
+
+#more:hover .more-text {
+    color: white;
+}
+
+#more li {
+    clear: both;
+}
+
+#tg-hover {
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid white;
+}
+
