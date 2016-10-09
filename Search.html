@@ -20,6 +20,20 @@
           $('#menu-phone').slideToggle('slow');
       });
     });
+
+    function getUrlVars()
+    {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        var tmp = hashes.toString();
+        var array = tmp.split("=");
+        return array[1];
+    }
+
+    $(function(){
+      $('#value-search').val(getUrlVars());
+    });
+    // alert()
 </script>
 </head>
 <body>
@@ -36,7 +50,7 @@
         </div>
         <div id="top_banner">
            <fieldset id="search">
-            <input type="text" title=""/>
+            <input type="text" title="" id="value-search" />
             <a href="#">
                 <button></button>
             </a>
