@@ -24,6 +24,14 @@
         function myFunction(x) {
             x.classList.toggle("change");
         }
+
+        $(function () {
+           $("#buttom-search").click(function(){
+             var tmp = $("#input-search").val()
+             location.href = "Search.html?key=" + tmp;
+          });
+        });
+
     </script>
 </head>
 <body>
@@ -245,10 +253,10 @@
             Free template for everyone
         </div>
         <fieldset id="search">
-            <input type="text" title=""/>
-            <a href="Search.html">
-                <button></button>
-            </a>
+            <input type="text" title="" id="input-search" />
+            <!-- <a href="Search.html" id="search-item"> -->
+                <button id="buttom-search"></button>
+            <!-- </a> -->
         </fieldset>
     </div>
     <div id="main">
