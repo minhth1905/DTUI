@@ -4,6 +4,10 @@ body {
     font-family: 'Myriad Pro', sans-serif;
 }
 
+.logo-img {
+  display: none;
+}
+
 #header {
   height: 70px;
   background-color: #ffffff;
