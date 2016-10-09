@@ -85,8 +85,8 @@ body {
     margin-right: 6%;
 }
 
-#network .img {
-    padding-left: 19px;
+#network a {
+    margin-left: 19px;
 }
 
 .clear {
@@ -96,7 +96,7 @@ body {
 /*Banner*/
 #top_banner {
     height: 400px;
-    background-image: url("../images/background_1.jpg");
+    background: url("../images/background_1.jpg") center;
     opacity: 1;
 }
 
@@ -110,16 +110,15 @@ body {
 }
 
 #search {
-    /*width: 50%;*/
-    margin-left: calc(50% - 340px);
     padding: 0;
     border: 0;
     margin-top: 60px;
 }
 
-input[type="text"] {
+#search input[type="text"] {
     float: left;
-    width: 633px;
+    margin-left: 20%;
+    width: calc(60% - 52px);
     height: 46px;
     font-size: 24px;
     font-weight: bold;
@@ -128,9 +127,11 @@ input[type="text"] {
 
 #search button {
     float: left;
-    width: 50px;
-    height: 50px;
-    background-image: url("../images/searchbutton.png");
+    width: 52px;
+    height: 52px;
+    background-color: #1d60c0;
+    color: white;
+    font-size: 12pt;
     border: 0;
 }
 
@@ -245,32 +246,13 @@ body {
     margin-left: 7px;
 }
 
+.shakira-box i {
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
 .cl {
     clear: both;
-}
-
-.icon-eye::before {
-    color: white;
-    content: '\e000';
-    font-family: 'feathericons', sans-serif;
-    padding: 2px 5px;
-    font-size: 14px;
-}
-
-.icon-paper-clip::before {
-    color: white;
-    content: '\e001';
-    font-family: 'feathericons', sans-serif;
-    padding: 2px 5px;
-    font-size: 14px;
-}
-
-.icon-heart::before {
-    color: white;
-    content: '\e024';
-    font-family: 'feathericons', sans-serif;
-    padding: 2px 5px;
-    font-size: 14px;
 }
 
 #see_all {
@@ -494,4 +476,7 @@ body {
 
 .shakira-box:hover .icon_0 img {
     display: inline;
+}
+
+.preview {
 }

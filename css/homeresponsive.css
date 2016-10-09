@@ -174,8 +174,6 @@
         display: block;
     }
 
-
-
     .menu-left li:hover {
         background: #CDE2CD;
     }
@@ -195,8 +193,6 @@
         border-left: 1px solid #CDE2CD;
     }
 
-
-
     .menu-right li a {
         text-decoration: none;
         color: #333;
@@ -207,6 +203,12 @@
     .menu-right li:hover {
         background: #CDE2CD;
     }
+
+    #search input[type="text"] {
+        margin-left: 10%;
+        width: calc(80% - 52px);
+    }
+
 }
 
 @media all and (max-width: 920px) {
@@ -230,16 +232,13 @@
 @media all and (max-width: 920px) {
 
     #search {
-        /*width: 50%;*/
-        margin-left: calc(50% - 222px);
         padding: 0;
         border: 0;
         margin-top: 60px;
     }
 
-    input[type="text"] {
+    #search input[type="text"] {
         float: left;
-        width: 400px;
         height: 46px;
         font-size: 24px;
         font-weight: bold;
@@ -273,7 +272,6 @@
     }
 
     #top_banner {
-        height: 430px;
         background-image: url("../images/background_1.jpg");
         opacity: 1;
     }
@@ -281,22 +279,20 @@
 
 @media all and (max-width: 550px) {
     #search {
-        margin-left: calc(50% - 172px);
         padding: 0;
         border: 0;
         margin-top: 60px;
     }
 
-    input[type="text"] {
+    #search input[type="text"] {
         float: left;
-        width: 300px;
         height: 46px;
         font-size: 24px;
         font-weight: bold;
     }
 }
 
-@media all and (max-width: 951px){
+@media all and (max-width: 951px) {
     #logo-footer {
         display: none;
     }
@@ -332,16 +328,13 @@
     }
 
     #search {
-        /*width: 50%;*/
-        margin-left: calc(50% - 122px);
         padding: 0;
         border: 0;
         margin-top: 60px;
     }
 
-    input[type="text"] {
+    #search input[type="text"] {
         float: left;
-        width: 200px;
         height: 46px;
         font-size: 24px;
         font-weight: bold;
@@ -349,6 +342,10 @@
 
     .shakira-content {
         display: none;
+    }
+
+    .icon_0 img {
+        display: inline;
     }
 
     #template {
