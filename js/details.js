@@ -12,5 +12,9 @@ function GetURLParameter(sParam) {
     }
 }
 
-$("#template-name").text(decodeURI(GetURLParameter("name")));
-$("#template-img").attr("src", decodeURI(GetURLParameter("src")));
+function onMockupLoaded(mockups) {
+    var id = GetURLParameter("id");
+    var mockup = findMockup(mockups, id);
+    $("#template-name").text(mockup.name);
+    $("#template-img").attr("src", getImage(mockup));
+}
