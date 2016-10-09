@@ -78,17 +78,24 @@ input[type="text"] {
 #network {
   padding-top: 18px;
   float: right;
-  margin-right: 10%;
+  margin-right: 8%;
  }
 
 #network .img {
   padding-left: 19px;
 }
 #menu {
-  height: 37px;
-  padding-left: 6%;
-  background-color: #efefef;
+    height: 37px;
+    margin-left: 6%;
+    margin-right: 6%;
+    background-color: #efefef;
 }
+
+.menu__item--left {
+    float: left;
+    position: relative;
+}
+
 .clear {
   clear: left;
   clear: right;
@@ -288,39 +295,67 @@ body {
   cursor: pointer;
 }
 
+#menu li a:hover, #more li:hover a {
+    color: blue;
+    cursor: pointer;
+}
+
 #more {
-  height: 37px;
-  width: 90px;
+    height: 37px;
+    width: 90px;
+    float: right;
+    z-index: 10;
 }
 
 /*Tam giac more*/
 
 .triangle_down {
-  height:0px; width:0px;
-  border-top:7px solid #c2c2c2;
-  border-left:5px solid transparent;
-  border-right:6px solid transparent;
-  margin-left: 34px;
-  padding-top: 3px;
+    height: 0;
+    width: 0;
+    border-top: 7px solid #c2c2c2;
+    border-left: 5px solid transparent;
+    border-right: 6px solid transparent;
+    margin-left: 34px;
+    padding-top: 3px;
 }
 
 #more:hover {
-  border-radius: 5px;
-  background-color: #3366FF;
-  color: white;
-  cursor: pointer;
+    border-radius: 5px;
+    background-color: #3366FF;
+    color: white;
+    cursor: pointer;
 }
 
 #more:hover .more-text {
-  color: white;
+    color: white;
+}
+
+#more li {
+    clear: both;
 }
 
 #tg-hover {
-  width:0px;
-  height:0px;
-  border-left:9px solid transparent;
-  border-right:9px solid transparent;
-  border-bottom:9px solid white;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid white;
+}
+
+/*CSS Tạo Menu Cấp 2*/
+#menu li ul {
+    border-radius: 7px;
+    padding: 0;
+    position: absolute;
+    display: none;
+    width: 150px;
+    background: white;
+}
+
+#menu li:hover ul {
+    padding: 0;
+    margin: 0;
+    display: block;
 }
 
 /*CSS Tạo Menu Cấp 2*/
