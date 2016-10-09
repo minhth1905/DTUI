@@ -131,9 +131,11 @@ input[type="text"] {
 
 #search button {
     float: left;
-    width: 50px;
-    height: 53px;
-    background-image: url("../images/searchbutton.png");
+    width: 52px;
+    height: 52px;
+    background: #1d60c0;
+    font-size: 12pt;
+    color: white;
     border: 0;
 }
 
