@@ -144,231 +144,231 @@ input[type="text"] {
 
 
 #detail-left{
-	padding-left: 8%;
-	width: 55%;
-	float: left;
+  padding-left: 8%;
+  width: 55%;
+  float: left;
 }
 
 #n-decription {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 35px;
-	opacity: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+  opacity: 1;
 }
 
 #n-decription span {
-	opacity: 0.3;
+  opacity: 0.3;
 }
 
 #n-information {
-	padding-top: 20px;
-	padding-left: 10px;
+  padding-top: 20px;
+  padding-left: 10px;
 }
 
 #information-top img {
-	float: left;
-	padding-right: 12px;
+  float: left;
+  padding-right: 12px;
 }
 
 #information-top p {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
 }
 #information-top p span {
-	font-size: 14px;
-	opacity: 0.3;
+  font-size: 14px;
+  opacity: 0.3;
 }
 
 #information-center {
-	font-size: 14px;
+  font-size: 14px;
 }
 
 #information-bottom ul {
-	padding: 0px;
+  padding: 0px;
 
 }
 #information-bottom  ul li{
     display: inline-block;
     font-size: 12px;
-	border: 1px solid;
-	padding: 5px;
-	margin: 1px;
-	color: white;
-	background-color: #c8c8c8;
-	border-radius: 5px;
+  border: 1px solid;
+  padding: 5px;
+  margin: 1px;
+  color: white;
+  background-color: #c8c8c8;
+  border-radius: 5px;
 }
 
 #information-bottom  ul li:hover {
-	color: black;
-	background-color: white;
+  color: black;
+  background-color: white;
 }
 
 /*#comment {
-	font-size: 12px;
-	padding-left: 10px;
-	padding-top: 20px;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-top: 20px;
 }
 
 #comment span {
-	color: red;
+  color: red;
 }
 
 #noname img {
-	float: left;
-	position: relative;
+  float: left;
+  position: relative;
 }
 
 
 #noname input {
-	position: absolute;
-	width: 48%;
-	height: 6.25%;
-	margin-left: 1%;
-	float: left;
+  position: absolute;
+  width: 48%;
+  height: 6.25%;
+  margin-left: 1%;
+  float: left;
 */
 #comment {
-	font-size: 12px;
-	padding-left: 10px;
-	padding-top: 20px;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-top: 20px;
 }
 
 #comment span {
-	color: red;
+  color: red;
 }
 
 #noname img {
-	float: left;
+  float: left;
 }
 
 
 #noname input {
-	width: 88%;
-	height: 56px;
-	margin-left: 2%;
-	float: left;
+  width: 88%;
+  height: 56px;
+  margin-left: 2%;
+  float: left;
 }
 
 
 .cmt-demo img {
-	float: left;
-	margin-top: 20px;
-	padding-left: 10px;
+  float: left;
+  margin-top: 20px;
+  padding-left: 10px;
 }
 .cmt-demo .ncmt-demo {
-	float: left;
-	width: 87%;
-	border: 2px solid #e0e0d1;
-	margin-left: 2%;
-	margin-top: 20px;
-	border-radius: 5px;
+  float: left;
+  width: 87%;
+  border: 2px solid #e0e0d1;
+  margin-left: 2%;
+  margin-top: 20px;
+  border-radius: 5px;
 }
 
 .ncmt-demo a {
-	text-decoration: none;
-	font-size: 20px;
-	color: black;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }
 .ncmt-demo a:hover {
-	color: blue;
+  color: blue;
 }
 .ncmt-demo span {
-	font-size: 15px;
+  font-size: 15px;
 }
 
 .ncmt-demo p {
-	font-size: 14px;
+  font-size: 14px;
 }
 #red {
-	color: red;
+  color: red;
 }
 #red:hover {
-	color: blue;
+  color: blue;
 }
 
 
 #detail-right {
-	padding-right: 8%;
-	width: 25%;
-	float: right;
+  padding-right: 8%;
+  width: 25%;
+  float: right;
 }
 /**** CHUA XONG *******/
 #n-search {
-	width: 100%;
-	padding-top: 15%;
-	border: 0;
+  width: 100%;
+  padding-top: 15%;
+  border: 0;
 }
 
 #n-search input {
-	width: 80%;
-	height: 25px;
-	background-color: #efefef;
-	border: 0px;
+  width: 80%;
+  height: 25px;
+  background-color: #efefef;
+  border: 0px;
 }
 #n-search button::before {
-	font-family: 'feathericons';
-	content: '\E116';
+  font-family: 'feathericons';
+  content: '\E116';
 }
 /**** CHUA XONG (end) *******/
 
 #img-size {
-	background-color: white;
-	margin-top: 32px;
-	height: 150px;
-	position: relative;
-	z-index: -1;
+  background-color: white;
+  margin-top: 32px;
+  height: 150px;
+  position: relative;
+  z-index: -1;
 }
 
 #img-size a{
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: black;
 }
 
 #img-size p{
-	padding: 20px;
+  padding: 20px;
 }
 
 #buy {
-	width: 49%;
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
-	border: 1px solid #e0e0d1;
-	text-align: center;
-	height: 30px;
-	line-height: 30px;
-	background-color: #efefef;
-	border-radius: 5px;
+  width: 49%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  border: 1px solid #e0e0d1;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  background-color: #efefef;
+  border-radius: 5px;
 }
 
 #download {
-	width: 49%;
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
-	border: 1px solid #e0e0d1;
-	text-align: center;
-	height: 30px;
-	line-height: 30px;
-	background-color: #efefef;
-	border-radius: 5px;
+  width: 49%;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border: 1px solid #e0e0d1;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  background-color: #efefef;
+  border-radius: 5px;
 }
 
 .more-Dtui {
-	width: 100%;
-	height: 410px;
-	background-color: white;
-	margin-top: 30px;
+  width: 100%;
+  height: 410px;
+  background-color: white;
+  margin-top: 30px;
 }
 .more-Dtui p {
-	padding-left: 3.125%;
-	padding-top: 15px;
+  padding-left: 3.125%;
+  padding-top: 15px;
 }
 .more-Dtui span a{
-	text-decoration: none;
-	color: red;
+  text-decoration: none;
+  color: red;
 }
 .Dtui-box img{
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .Dtui-box{
   float:left;
@@ -379,8 +379,8 @@ input[type="text"] {
 }
 
 .Dtui-box:hover {
-	cursor: pointer;
-	opacity: 1;
+  cursor: pointer;
+  opacity: 1;
 }
 .Dtui-box .dtuiImg-content{
   width:100%;
@@ -404,8 +404,8 @@ input[type="text"] {
   text-align: center;
 }
 .dtuiImg-body  a{
-	font-size: 8px;
-	text-decoration: none;
+  font-size: 8px;
+  text-decoration: none;
 }
 .Dtui-box:hover .dtuiImg-content{
   top: -80px;
@@ -433,15 +433,15 @@ input[type="text"] {
 }
 
 #vg {
-	text-decoration: none;
-	padding-left: 33%;
-	font-size: 14px;
-	color: black;
-	opacity: 0.5;
+  text-decoration: none;
+  padding-left: 33%;
+  font-size: 14px;
+  color: black;
+  opacity: 0.5;
 }
 
 #vg:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 #footer {
@@ -497,9 +497,9 @@ input[type="text"] {
 }
 
 #copyright {
-	float: right;
-	font-size: 14px;
-	opacity: 0.5;
+  float: right;
+  font-size: 14px;
+  opacity: 0.5;
 }
 
 

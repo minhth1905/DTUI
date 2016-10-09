@@ -31,7 +31,7 @@
     }
 
     $(function(){
-      $('#value-search').val(getUrlVars());
+      $('.value-search').val(getUrlVars());
     });
     // alert()
 </script>
@@ -50,7 +50,7 @@
         </div>
         <div id="top_banner">
            <fieldset id="search">
-            <input type="text" title="" id="value-search" />
+            <input type="text" title="" class="value-search" />
             <a href="#">
                 <button></button>
             </a>
@@ -61,6 +61,7 @@
                 <a href="https://plus.google.com/share?url=http://www.dtuisix.esy.es"><img src="images/socials/googleplus.png" class="img"></a>
                 <a href="http://www.stumbleupon.com/submit?url=http://www.dtuisix.esy.es"><img src="images/socials/stumbleupon.png" class="img"></a>
                 <a href="http://twitter.com/intent/tweet?text=Free vectors, photos and PSD Downloads - Freepik&url=http://www.dtuisix.esy.es"><img src="images/socials/twitter.png" class="img"></a>
+            </div>
             </div>
       </div>
     </div>
@@ -176,13 +177,11 @@
       <div id="header-phone">
         <div id="top-bar-phone">
           <div id="logo-phone">
-            <a href="home.html">
-                <img src="images/logos/logo-color-notext.png">
-            </a>
+            <img src="images/logo.png">
           </div>
           <div id="top_banner_phone">
             <fieldset id="search-phone">
-              <input type="text"></input>
+              <input type="text" title="" class="value-search" />
               <div class="show-menu" onclick="myFunction(this, 'menu-phone')">
                   <div class="menu-icon"></div>
                   <div class="menu-icon"></div>
