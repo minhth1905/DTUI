@@ -31,14 +31,14 @@
 @media all and (max-width: 980px){
 
   #noname input {
-  width: 88%;
+  width: 84.5%;
   height: 40px;
   margin-left: 2%;
   float: left;
   }
   .cmt-demo .ncmt-demo {
   float: left;
-  width: 87%;
+  width: 80%;
   border: 2px solid #e0e0d1;
   margin-left: 2%;
   margin-top: 20px;
@@ -128,10 +128,10 @@
   }
 
   #detail-left{
-  padding-left: 8%;
-  padding-right: 8%;
-  width: 84%;
-  float: left;
+    /*padding-left: 8%;*/
+    /*padding-right: 8%;*/
+    width: 84%;
+    float: left;
 }
   #n-decription{
     float: left;
@@ -387,7 +387,7 @@
     }
 }
 
-@media all and (max-width: 951px){
+@media all and (max-width: 990px){
     #logo-footer {
         display: none;
     }
