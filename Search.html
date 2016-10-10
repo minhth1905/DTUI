@@ -1,202 +1,197 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Search</title>
-  <link rel="stylesheet" type="text/css" href="css/search.css">
-  <link rel="stylesheet" type="text/css" href="css/searchresponsive.css">
-  <link rel="stylesheet" type="text/css" href="css/font.css">
-  <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'
- rel='stylesheet' type='text/css'> -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--[if lt IE 9]>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-  <![endif]-->
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="jquery-3.1.1.js"></script>
-  <script>
-    $(function(){
-      $('.show-menu').click(function(){
-          $('#menu-phone').slideToggle('slow');
-      });
-    });
-
-    function getUrlVars()
-    {
-        var vars = [], hash;
-        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-        var tmp = hashes.toString();
-        var array = tmp.split("=");
-        return array[1];
-    }
-
-    $(function(){
-      $('.value-search').val(getUrlVars());
-    });
-    // alert()
-</script>
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/searchresponsive.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.6.3/css/font-awesome.min.css"/>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'
+   rel='stylesheet' type='text/css'> -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="js/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
 </head>
 <body>
-  <div class="container">
-  <!-- Menu va header danh cho may tinh -->
+<div class="container">
+    <!-- Menu va header danh cho may tinh -->
     <div class="clear"></div>
     <div id="header">
-      <div id="top-bar">
-        <div id="logo">
-          <a href="home.html">
-              <img src="images/logo--red.png" class="logo-red">
-              <img src="images/logo.png" class="logo-img">
-          </a>
-        </div>
-        <div id="top_banner">
-           <fieldset id="search">
-            <input type="text" title="" class="value-search" />
-            <a href="#">
-                <button></button>
-            </a>
-           </fieldset>
-        </div>
-        <div id="network">
-                <a href='http://www.facebook.com/sharer.php?s=100&p[url]=http://www.dtuisix.esy.es' rel='nofollow'><img src="images/socials/facebook.png" target="_blank"></a><script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share' type='text/javascript'></script>
-                <a href="https://plus.google.com/share?url=http://www.dtuisix.esy.es"><img src="images/socials/googleplus.png" class="img"></a>
-                <a href="http://www.stumbleupon.com/submit?url=http://www.dtuisix.esy.es"><img src="images/socials/stumbleupon.png" class="img"></a>
-                <a href="http://twitter.com/intent/tweet?text=Free vectors, photos and PSD Downloads - Freepik&url=http://www.dtuisix.esy.es"><img src="images/socials/twitter.png" class="img"></a>
+        <div id="top-bar">
+            <div id="logo">
+                <a href="home.html">
+                    <img src="images/logo--red.png" class="logo-red">
+                    <img src="images/logo.png" class="logo-img">
+                </a>
             </div>
+            <div id="top_banner">
+                <fieldset id="search">
+                    <input type="text" title="" class="value-search"/>
+                    <a href="#">
+                        <button></button>
+                    </a>
+                </fieldset>
             </div>
-      </div>
+            <div id="network">
+                <a href='http://www.facebook.com/sharer.php?s=100&p[url]=http://www.dtuisix.esy.es' rel='nofollow'><img
+                        src="images/socials/facebook.png" target="_blank"></a>
+                <!--<script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share' type='text/javascript'></script>-->
+                <a href="https://plus.google.com/share?url=http://www.dtuisix.esy.es"><img
+                        src="images/socials/googleplus.png" class="img"></a>
+                <a href="http://www.stumbleupon.com/submit?url=http://www.dtuisix.esy.es"><img
+                        src="images/socials/stumbleupon.png" class="img"></a>
+                <a href="http://twitter.com/intent/tweet?text=Free vectors, photos and PSD Downloads - Freepik&url=http://www.dtuisix.esy.es"><img
+                        src="images/socials/twitter.png" class="img"></a>
+            </div>
+        </div>
     </div>
-    <div class="clear"></div>
-    <div id="menu">
-        <ul>
-            <li class="menu__item--left"><a href="#"><img src="images/Psicon.png">
+</div>
+<div class="clear"></div>
+<div id="menu">
+    <ul>
+        <li class="menu__item--left" category="ps">
+            <a href="#"><img src="images/Psicon.png">
                 <p>Photoshop</p>
             </a>
-            </li>
-            <li class="menu__item--left"><a href="#"><img src="images/Enicon.png">
+        </li>
+        <li class="menu__item--left" category="en">
+            <a href="#"><img src="images/Enicon.png">
                 <p>Encore</p>
             </a>
-            </li>
-            <li class="menu__item--left"><a href="#"><img src="images/Aeicon.png">
+        </li>
+        <li class="menu__item--left" category="ae">
+            <a href="#"><img src="images/Aeicon.png">
                 <p>Affter Effects</p>
             </a>
-            </li>
-            <li class="menu__item--left"><a href="#"><img src="images/Pricon.png">
+        </li>
+        <li class="menu__item--left" category="pr">
+            <a href="#"><img src="images/Pricon.png">
                 <p>Premiere Pro</p>
             </a>
-            </li>
-            <li class="menu__item--left"><a href="#"><img src="images/Idicon.png">
+        </li>
+        <li class="menu__item--left" category="id">
+            <a href="#"><img src="images/Idicon.png">
                 <p>InDesign</p>
             </a>
-            </li>
-            <li class="menu__item--left" id="respon-4">
-                <a href="#"><img src="images/Flicon.png">
-                    <p>Flash</p>
-                </a>
-            </li>
-            <li class="menu__item--left" id="respon-3">
-                <a href="#"><img src="images/Fbicon.png">
-                    <p>Flash Builder</p>
-                </a>
-            </li>
-            <li class="menu__item--left" id="respon-2">
-                <a href="#"><img src="images/Aiicon.png">
-                    <p>Illustrator</p>
-                </a>
-            </li>
-            <li class="menu__item--left" id="respon-1">
-                <a href="#"><img src="images/Bricon.png">
-                    <p>Bridge</p>
-                </a>
-            </li>
-            <li id="more">
-                <a href="#" class="more-text">
-                    <p>More
-                        <span class="triangle_down"></span>
-                    </p>
-                </a>
-
-                <ul style="margin-top: 22px;">
-                    <li id="show_1">
-                        <a href="#"><img src="images/Bricon.png">
-                            <p>Bridge</p>
-                        </a>
-                    </li>
-                    <li id="show_2">
-                        <a href="#"><img src="images/Aiicon.png">
-                            <p>Illustrator</p>
-                        </a>
-                    </li>
-                    <li id="show_3">
-                        <a href="#"><img src="images/Fbicon.png">
-                            <p>Flash Builder</p>
-                        </a>
-                    </li>
-                    <li id="show_4">
-                      <a href="#"><img src="images/Flicon.png">
-                      <p>Flash</p>
-                      </a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="images/Fwicon.png">
-                            <p>Fireworks</p>
-                        </a>
-                    </li>
-                    <li><a href="#">
+        </li>
+        <li class="menu__item--left" id="respon-4" category="fl">
+            <a href="#"><img src="images/Flicon.png">
+                <p>Flash</p>
+            </a>
+        </li>
+        <li class="menu__item--left" id="respon-3" category="fb">
+            <a href="#"><img src="images/Fbicon.png">
+                <p>Flash Builder</p>
+            </a>
+        </li>
+        <li class="menu__item--left" id="respon-2" category="ai">
+            <a href="#"><img src="images/Aiicon.png">
+                <p>Illustrator</p>
+            </a>
+        </li>
+        <li class="menu__item--left" id="respon-1" category="br">
+            <a href="#"><img src="images/Bricon.png">
+                <p>Bridge</p>
+            </a>
+        </li>
+        <li id="more">
+            <a href="#" class="more-text">
+                <p>More
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </p>
+            </a>
+            
+            <ul style="margin-top: 22px;">
+                <li id="show_1" category="br">
+                    <a href="#"><img src="images/Bricon.png">
+                        <p>Bridge</p>
+                    </a>
+                </li>
+                <li id="show_2" category="ai">
+                    <a href="#"><img src="images/Aiicon.png">
+                        <p>Illustrator</p>
+                    </a>
+                </li>
+                <li id="show_3" category="fb">
+                    <a href="#"><img src="images/Fbicon.png">
+                        <p>Flash Builder</p>
+                    </a>
+                </li>
+                <li id="show_4" category="fl">
+                    <a href="#"><img src="images/Flicon.png">
+                        <p>Flash</p>
+                    </a>
+                </li>
+                <li category="fw">
+                    <a href="#"><img src="images/Fwicon.png">
+                        <p>Fireworks</p>
+                    </a>
+                </li>
+                <li category="dw">
+                    <a href="#">
                         <img src="images/Dwicon.png">
                         <p>Dreamweaver</p>
                     </a>
-                    </li>
-                    <li><a href="#">
+                </li>
+                <li category="au">
+                    <a href="#">
                         <img src="images/Auicon.png">
                         <p>Audition</p>
                     </a>
-                    </li>
-                    <li><a href="#">
+                </li>
+                <li category="sg">
+                    <a href="#">
                         <img src="images/Sgicon.png">
                         <p>SpeedGrade</p>
                     </a>
-                    </li>
-                    <li><a href="#">
+                </li>
+                <li category="pl">
+                    <a href="#">
                         <img src="images/Plicon.png">
                         <p>Prelude</p>
                     </a>
-                    </li>
-                    <li><a href="#">
+                </li>
+                <li category="lr">
+                    <a href="#">
                         <img src="images/Lricon.png">
                         <p>Lightroom</p>
                     </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <!-- Menu va header danh cho dien thoai -->
-      <!-- Header -->
-    <div id="phone">
-      <div class="cl"></div>
-      <div id="header-phone">
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!-- Menu va header danh cho dien thoai -->
+<!-- Header -->
+<div id="phone">
+    <div class="cl"></div>
+    <div id="header-phone">
         <div id="top-bar-phone">
-          <div id="logo-phone">
-            <img src="images/logo.png">
-          </div>
-          <div id="top_banner_phone">
-            <fieldset id="search-phone">
-              <input type="text" title="" class="value-search" />
-              <div class="show-menu" onclick="myFunction(this, 'menu-phone')">
-                  <div class="menu-icon"></div>
-                  <div class="menu-icon"></div>
-                  <div class="menu-icon"></div>
-              </div>
-            </fieldset>
-          </div>
-          <div id="user-phone">
-            <img src="images/user.png">
-          </div>
+            <div id="logo-phone">
+                <img src="images/logo.png">
+            </div>
+            <div id="top_banner_phone">
+                <fieldset id="search-phone">
+                    <input type="text" title="" class="value-search"/>
+                    <div class="show-menu" onclick="myFunction(this, 'menu-phone')">
+                        <div class="menu-icon"></div>
+                        <div class="menu-icon"></div>
+                        <div class="menu-icon"></div>
+                    </div>
+                </fieldset>
+            </div>
+            <div id="user-phone">
+                <img src="images/user.png">
+            </div>
         </div>
-      </div>
-      <!-- end -->
-      <!-- Menu -->
-      <div id="menu-phone">
+    </div>
+    <!-- end -->
+    <!-- Menu -->
+    <div id="menu-phone">
         <div class="menu-left">
             <ul>
                 <li><a href="#"><img src="images/icons/16x16/ps.png">
@@ -229,7 +224,7 @@
                         <span>Flash Builder</span>
                     </a>
                 </li>
-
+            
             </ul>
         </div>
         <div class="menu-right">
@@ -270,593 +265,598 @@
                 </li>
             </ul>
         </div>
-      </div>
-      <div id="found-phone" style="font-weight: bold; text-align: center;font-size: 30px; margin-top: 20px;">12,345 Templates found</div>
-      <div id="templace-phone">
+    </div>
+    <div id="found-phone" style="font-weight: bold; text-align: center;font-size: 30px; margin-top: 20px;">12,345
+        Templates found
+    </div>
+    <div id="templace-phone">
         <div class="shakira-box">
-          <a href="#"><img src="images/image1.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image1.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image2.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image2.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image3.jpg" class="image-border"></a>
-          <div class="icon_0">
-            <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image3.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image4.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image4.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image5.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image5.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image2.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image2.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image6.jpg" class="image-border"></a>
-          <div class="icon_0">
-            <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image6.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image7.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image7.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image4.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image4.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image5.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image5.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image6.jpg" class="image-border"></a>
-          <div class="icon_0">
-            <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image6.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
-
+        
         <div class="shakira-box">
-          <a href="#"><img src="images/image7.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
-        </div>
-        <div class="shakira-box">
-          <a href="#"><img src="images/image7.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image7.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image7.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image7.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image7.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image7.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image8.jpg" class="image-border"></a>
-          <div class="icon_0">
-            <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image7.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
-         <div class="shakira-box images-three">
-          <a href="#"><img src="images/image8.jpg" class="image-border"></a>
-          <div class="icon_0">
-            <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+        <div class="shakira-box">
+            <a href="#"><img src="images/image8.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box images-three">
-          <a href="#"><img src="images/image9.jpg" class="image-border"></a>
-          <div class="icon_0">
-            <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image8.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
-      </div>
+        <div class="shakira-box images-three">
+            <a href="#"><img src="images/image9.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
+        </div>
     </div>
-    </div>
-    <!-- end -->
-    <div id="found" style="font-weight: bold; text-align: center;font-size: 30px; margin-top: 20px;">12,345 Templates found</div>
-    <div id="main">
-      <div id="filter">
+</div>
+</div>
+<!-- end -->
+<div id="found" style="font-weight: bold; text-align: center;font-size: 30px; margin-top: 20px;">12,345 Templates
+    found
+</div>
+<div id="main">
+    <div id="filter">
         <div id="filetypes">
-          <ul class="tag-list">
-            <li style="font-size: 14pt; font-weight: bold; padding-left: 15px;">Relative keyworks</li>
-            <li><a href="#">Animals</a></li>
-            <li><a href="#">Banner</a></li>
-            <li><a href="#">Poster</a></li>
-            <li><a href="#">Map</a></li>
-            <li><a href="#">Nature</a></li>
-            <li><a href="#">Season</a></li>
-            <li><a href="#">Standee</a></li>
-            <li><a href="#">Logo</a></li>
-            <li><a href="#">Inforgraphic</a></li>
-            <li><a href="#">Background</a></li>
-            <li><a href="#">Backdrop</a></li>
-            <li><a href="#">Facebook cover</a></li>
-            <li><a href="#">Trailer</a></li>
-            <li><a href="#">Intro</a></li>
-            <li><a href="#">Business card</a></li>
-            <li><a href="#">Icon</a></li>
-            <li><a href="#">Wedding</a></li>
-          </ul>
+            <ul class="tag-list" id="tag-list">
+                <li style="font-size: 14pt; font-weight: bold; padding-left: 15px;">Relative keyworks</li>
+                <li><a href="#">Animals</a></li>
+                <li><a href="#">Banner</a></li>
+                <li><a href="#">Poster</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">Season</a></li>
+                <li><a href="#">Standee</a></li>
+                <li><a href="#">Logo</a></li>
+                <li><a href="#">Inforgraphic</a></li>
+                <li><a href="#">Background</a></li>
+                <li><a href="#">Backdrop</a></li>
+                <li><a href="#">Facebook cover</a></li>
+                <li><a href="#">Trailer</a></li>
+                <li><a href="#">Intro</a></li>
+                <li><a href="#">Business card</a></li>
+                <li><a href="#">Icon</a></li>
+                <li><a href="#">Wedding</a></li>
+            </ul>
         </div>
         <div id="sortby">
-          <ul id="item">
-            <li style="font-size: 14pt; font-weight: bold;">SORT BY</li>
-            <li><a href="#">Most popular</a></li>
-            <li><a href="#">Newest</a></li>
-          </ul>
+            <ul id="item">
+                <li style="font-size: 14pt; font-weight: bold;">SORT BY</li>
+                <li><a href="#">Most popular</a></li>
+                <li><a href="#">Newest</a></li>
+            </ul>
         </div>
-      </div>
-      <div id="templace">
+    </div>
+    <div id="templace">
         <div class="shakira-box">
-          <a href="#"><img src="images/image1.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
-        </div>
-        <div class="shakira-box">
-          <a href="#"><img src="images/image2.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image1.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image3.jpg" class="image-border"></a>
-          <div class="icon_0">
-            <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image2.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image4.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image3.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image5.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image4.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image6.jpg" class="image-border"></a>
-          <div class="icon_0">
-            <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image5.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image7.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image6.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image4.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image7.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image5.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image4.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image6.jpg" class="image-border"></a>
-          <div class="icon_0">
-            <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
-        </div>
-
-        <div class="shakira-box">
-          <a href="#"><img src="images/image7.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image5.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image7.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image6.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="shakira-box">
+            <a href="#"><img src="images/image7.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image7.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image7.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image7.jpg" class="image-border"></a>
-          <div class="icon_0">
-          <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image7.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box">
-          <a href="#"><img src="images/image8.jpg" class="image-border"></a>
-          <div class="icon_0">
-            <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image7.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
-               <div class="shakira-box">
-          <a href="#"><img src="images/image8.jpg" class="image-border"></a>
-          <div class="icon_0">
-            <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+        <div class="shakira-box">
+            <a href="#"><img src="images/image8.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
+        </div>
+        <div class="shakira-box">
+            <a href="#"><img src="images/image8.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
         <div class="shakira-box images-none">
-          <a href="#"><img src="images/image9.jpg" class="image-border"></a>
-          <div class="icon_0">
-            <img src="images/Aiicon.png">
-          </div>
-          <div class="shakira-content">
-            <h2 class="shakira-header">Photoshop</h2>
-            <p class="shakira-body">
-              <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
-              <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
-              <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
-            </p>
-          </div>
+            <a href="#"><img src="images/image9.jpg" class="image-border"></a>
+            <div class="icon_0">
+                <img src="images/Aiicon.png">
+            </div>
+            <div class="shakira-content">
+                <h2 class="shakira-header">Photoshop</h2>
+                <p class="shakira-body">
+                    <a href="#"><span class="icon-heart" style="color: white;">13,86</span></a>
+                    <a href="#"><span class="icon-eye" style="color: white;">12,56</span></a>
+                    <a href="#"><span class="icon-paper-clip" style="color: white;">11,54</span></a>
+                </p>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="cl"></div>
-    <div id="paging-holder-mobile">
-      <ul class="holder">
-        <li><a href="#"><<</a></li>
-        <li><a href="#"><</a></li>
-        <li><a href="#">1</a></li>
+</div>
+<div class="cl"></div>
+<div id="paging-holder-mobile">
+    <ul class="holder">
+        <li><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+        <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+        <li class="page-number"><a href="#">1</a></li>
         <li><a href="#">...</a></li>
-        <li><a href="#">></a></li>
-        <li id="clum"><a href="#">>></a></li>
-      </ul>
-    </div>
-    <div class="cl"></div>
-    <div id="paging-holder">
-      <ul class="holder">
-        <li><a href="#">|< </a></li>
-        <li><a href="#"><</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">6</a></li>
-        <li><a href="#">7</a></li>
-        <li><a href="#">8</a></li>
-        <li><a href="#">9</a></li>
-        <li><a href="#">10</a></li>
-        <li><a href="#">...</a></li>
-        <li><a href="#">></a></li>
-        <li><a href="#">>|</a></li>
-      </ul>
-    </div>
-      <div id="footer">
-        <div id="left">
-            <div id="logo-footer">
-                <img src="images/logo--gray.png">
-            </div>
-            <div id="text-intro">
-                <p>Free templates for everyone</p>
-            </div>
+        <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+        <li id="clum"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+    </ul>
+</div>
+<div class="cl"></div>
+<div id="paging-holder">
+    <ul class="holder">
+        <li class="disabled" id="first-page"><a><i class="fa fa-angle-double-left"></i></a></li>
+        <li class="disabled" id="previous-page"><a><i class="fa fa-angle-left"></i></a></li>
+        <li class="page-number current-page"><a>1</a></li>
+        <li class="page-number"><a>2</a></li>
+        <li class="page-number"><a>3</a></li>
+        <li class="page-number"><a>4</a></li>
+        <li class="page-number"><a>5</a></li>
+        <li class="page-number"><a>6</a></li>
+        <li class="page-number"><a>7</a></li>
+        <li class="page-number"><a>8</a></li>
+        <li class="page-number"><a>9</a></li>
+        <li class="page-number"><a>10</a></li>
+        <li id="next-page"><a><i class="fa fa-angle-right"></i></a></li>
+        <li id="last-page"><a><i class="fa fa-angle-double-right"></i></a></li>
+    </ul>
+</div>
+<div id="footer">
+    <div id="left">
+        <div id="logo-footer">
+            <img src="images/logo--gray.png">
         </div>
-        <div id="right">
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div id="copyright">
-                Copyright © 2016 freepik.com
-            </div>
+        <div id="text-intro">
+            <p>Free templates for everyone</p>
         </div>
+    </div>
+    <div id="right">
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div id="copyright">
+            Copyright © 2016 freepik.com
+        </div>
+    </div>
 
-    </div>
+</div>
+<script src="js/common.js"></script>
+<script src="js/search.js"></script>
 </body>
 </html>
