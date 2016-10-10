@@ -18,226 +18,226 @@
 }
 @media only screen and (min-width: 750px) and (max-width: 1900px){
   #phone-details {
-	  display: none;
+    display: none;
   }
   #phone-search {
-	  display: none;
+    display: none;
   }
   .cmt-phone {
-	  display: none;
+    display: none;
   }
 }
 
 @media all and (max-width: 980px){
 
   #noname input {
-	width: 88%;
-	height: 40px;
-	margin-left: 2%;
-	float: left;
-	}
+  width: 88%;
+  height: 40px;
+  margin-left: 2%;
+  float: left;
+  }
   .cmt-demo .ncmt-demo {
-	float: left;
-	width: 87%;
-	border: 2px solid #e0e0d1;
-	margin-left: 2%;
-	margin-top: 20px;
-	border-radius: 5px;
+  float: left;
+  width: 87%;
+  border: 2px solid #e0e0d1;
+  margin-left: 2%;
+  margin-top: 20px;
+  border-radius: 5px;
 }
 
-	.ncmt-demo a {
-		text-decoration: none;
-		font-size: 18px;
-		color: black;
-	}
-	.ncmt-demo a:hover {
-		color: blue;
-	}
-	.ncmt-demo span {
-		font-size: 15px;
-	}
+  .ncmt-demo a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+  }
+  .ncmt-demo a:hover {
+    color: blue;
+  }
+  .ncmt-demo span {
+    font-size: 15px;
+  }
 
-	.ncmt-demo p {
-		font-size: 12px;
-	}
+  .ncmt-demo p {
+    font-size: 12px;
+  }
 
-	#img-size {
-		font-size: 15px;
-	}
+  #img-size {
+    font-size: 15px;
+  }
 
-	.more-Dtui {
-		width: 100%;
-		height: 300px;
-		background-color: white;
-		margin-top: 30px;
-	}
-	.more-Dtui p {
-		font-size: 15px;
-	}
+  .more-Dtui {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    margin-top: 30px;
+  }
+  .more-Dtui p {
+    font-size: 15px;
+  }
 }
 
 @media all and (max-width: 768px){
   .cmt-demo img {
-		float: left;
-		margin-top: 20px;
-		padding-left: 10px;
-	}
-	.cmt-demo .ncmt-demo {
-		float: left;
-		width: 86%;
-		border: 2px solid #e0e0d1;
-		margin-left: 2%;
-		margin-top: 13px;
-		border-radius: 5px;
-	}
+    float: left;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+  .cmt-demo .ncmt-demo {
+    float: left;
+    width: 86%;
+    border: 2px solid #e0e0d1;
+    margin-left: 2%;
+    margin-top: 13px;
+    border-radius: 5px;
+  }
 
-	.ncmt-demo a {
-		text-decoration: none;
-		font-size: 20px;
-		color: black;
-	}
-	.ncmt-demo a:hover {
-		color: blue;
-	}
-	.ncmt-demo span {
-		font-size: 12px;
-	}
+  .ncmt-demo a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+  }
+  .ncmt-demo a:hover {
+    color: blue;
+  }
+  .ncmt-demo span {
+    font-size: 12px;
+  }
 
-	.ncmt-demo p {
-		font-size: 12px;
-	}
+  .ncmt-demo p {
+    font-size: 12px;
+  }
 
-	#n-information {
-		font-size: 12px;
-	}
+  #n-information {
+    font-size: 12px;
+  }
 
 }
 
 @media all and (max-width: 750px) {
-	#detail-right {
-		display: none;
-	}
-	#n-search {
-		display: none;
-	}
-	#img-size{
-		display: none;
-	}
-	.more-Dtui {
-		display: none;
-	}
+  #detail-right {
+    display: none;
+  }
+  #n-search {
+    display: none;
+  }
+  #img-size{
+    display: none;
+  }
+  .more-Dtui {
+    display: none;
+  }
 
-	#detail-left{
-	padding-left: 8%;
-	padding-right: 8%;
-	width: 84%;
-	float: left;
+  #detail-left{
+  padding-left: 8%;
+  padding-right: 8%;
+  width: 84%;
+  float: left;
 }
-	#n-decription{
-		float: left;
-		font-size: 14px;
-	}
-	#n-image {
-		position: relative;
-	}
-	#phone-details {
-		float: right;
-		font-size: 14px;
-		position: absolute;
-		right: 0px;
-		bottom: 0px;
-		height: 26px;
-	}
-	#phone-details a {
-		padding: 5px;
-		text-decoration: none;
-		border: 1px solid #e0e0d1;
-		text-align: center;
-		background-color: #efefef;
-		border-radius: 5px;
-		color: black;
-	}
+  #n-decription{
+    float: left;
+    font-size: 14px;
+  }
+  #n-image {
+    position: relative;
+  }
+  #phone-details {
+    float: right;
+    font-size: 14px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 26px;
+  }
+  #phone-details a {
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid #e0e0d1;
+    text-align: center;
+    background-color: #efefef;
+    border-radius: 5px;
+    color: black;
+  }
 
-	#phone-search {
-		width:100%;
-	}
+  #phone-search {
+    width:100%;
+  }
 
-	#phone-search input {
-		margin-top: 30px;
-		margin-left: 30%;
-		margin-bottom: 30px;
-		width: 29%;
-		height: 20px;
-		background-color: #efefef;
-		border: 0;
-		font-size: 14px;
-	}
-	#phone-search button {
-		font-size: 14px;
-	}
-	#copyright {
-		display: none;
-	}
-	.no-display {
-		display: none;
-	}
-	.ncmt-demo a{
-		font-size: 18px;
-	}
-	.cmt-phone a{
-		font-size: 10px;
-	}
+  #phone-search input {
+    margin-top: 30px;
+    margin-left: 30%;
+    margin-bottom: 30px;
+    width: 29%;
+    height: 20px;
+    background-color: #efefef;
+    border: 0;
+    font-size: 14px;
+  }
+  #phone-search button {
+    font-size: 14px;
+  }
+  #copyright {
+    display: none;
+  }
+  .no-display {
+    display: none;
+  }
+  .ncmt-demo a{
+    font-size: 18px;
+  }
+  .cmt-phone a{
+    font-size: 10px;
+  }
 
 }
 
 @media all and (max-width: 500px) {
-	#information-top p {
-		display: none;
-	}
-	#information-bottom {
-		display: none;
-	}
+  #information-top p {
+    display: none;
+  }
+  #information-bottom {
+    display: none;
+  }
 
-	#information-top img {
-		display: none;
-	}
+  #information-top img {
+    display: none;
+  }
 
-	#noname img {
-		width: 30px;
-		height: auto;
-	}
-
-
-	#noname input {
-		width: 80%;
-		height: 44px;
-		margin-left: 2%;
-		float: left;
-	}
+  #noname img {
+    width: 30px;
+    height: auto;
+  }
 
 
-	.cmt-demo img {
-		width: 30px;
-		height: auto;
-	}
-	.cmt-demo .ncmt-demo {
-		float: left;
-		width: 79%;
-		border: 2px solid #e0e0d1;
-		margin-left: 2%;
-		margin-top: 20px;
-		border-radius: 5px;
-	}
-	.ncmt-demo span {
-		font-size: 10px;
-	}
+  #noname input {
+    width: 80%;
+    height: 44px;
+    margin-left: 2%;
+    float: left;
+  }
 
-	.ncmt-demo p {
-		font-size: 10px;
-	}
-	.ncmt-demo a {
-		font-size: 14px;
-	}
+
+  .cmt-demo img {
+    width: 30px;
+    height: auto;
+  }
+  .cmt-demo .ncmt-demo {
+    float: left;
+    width: 79%;
+    border: 2px solid #e0e0d1;
+    margin-left: 2%;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .ncmt-demo span {
+    font-size: 10px;
+  }
+
+  .ncmt-demo p {
+    font-size: 10px;
+  }
+  .ncmt-demo a {
+    font-size: 14px;
+  }
 }
 
 /*Menu*/

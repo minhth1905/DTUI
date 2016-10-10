@@ -20,6 +20,20 @@
           $('#menu-phone').slideToggle('slow');
       });
     });
+
+    function getUrlVars()
+    {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        var tmp = hashes.toString();
+        var array = tmp.split("=");
+        return array[1];
+    }
+
+    $(function(){
+      $('.value-search').val(getUrlVars());
+    });
+    // alert()
 </script>
 </head>
 <body>
@@ -36,17 +50,18 @@
         </div>
         <div id="top_banner">
            <fieldset id="search">
-            <input type="text" title=""/>
+            <input type="text" title="" class="value-search" />
             <a href="#">
                 <button></button>
             </a>
            </fieldset>
         </div>
         <div id="network">
-                <a href="#"><img src="images/facebook.png"></a>
-                <a href="#"><img src="images/googleplus.png" class="img"></a>
-                <a href="#"><img src="images/stumbleupon.png" class="img"></a>
-                <a href="#"><img src="images/twitter.png" class="img"></a>
+                <a href='http://www.facebook.com/sharer.php?s=100&p[url]=http://www.dtuisix.esy.es' rel='nofollow'><img src="images/socials/facebook.png" target="_blank"></a><script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share' type='text/javascript'></script>
+                <a href="https://plus.google.com/share?url=http://www.dtuisix.esy.es"><img src="images/socials/googleplus.png" class="img"></a>
+                <a href="http://www.stumbleupon.com/submit?url=http://www.dtuisix.esy.es"><img src="images/socials/stumbleupon.png" class="img"></a>
+                <a href="http://twitter.com/intent/tweet?text=Free vectors, photos and PSD Downloads - Freepik&url=http://www.dtuisix.esy.es"><img src="images/socials/twitter.png" class="img"></a>
+            </div>
             </div>
       </div>
     </div>
@@ -166,7 +181,7 @@
           </div>
           <div id="top_banner_phone">
             <fieldset id="search-phone">
-              <input type="text"></input>
+              <input type="text" title="" class="value-search" />
               <div class="show-menu" onclick="myFunction(this, 'menu-phone')">
                   <div class="menu-icon"></div>
                   <div class="menu-icon"></div>
