@@ -9,7 +9,7 @@ $(function () {
 });
 
 function onMockupLoaded(mockups) {
-    randomMockupId(mockups, 20);
+    randomMockup(mockups, 20);
 }
 
 $("#tag-list").find("a").each(function () {
