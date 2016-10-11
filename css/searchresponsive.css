@@ -30,7 +30,7 @@
   #found-phone {
     display: none;
   }
-  #templace-phone {
+  #template-phone {
     display: none;
   }
 }
@@ -38,7 +38,7 @@
   #main {
     display: none;
   }
-  #templace-phone {
+  #template-phone {
   width: 950px;
   margin: auto;
   margin-top: 30px;
@@ -88,7 +88,7 @@
 }
 
 @media all and (max-width: 1170px){
-  #templace-phone {
+  #template-phone {
     width: 922px;
     margin: auto;
     margin-top: 30px;
@@ -326,7 +326,7 @@
   #main {
     display: none;
   }
-    #templace-phone {
+    #template-phone {
     width: 690px;
     margin: auto;
     margin-top: 30px;
@@ -334,7 +334,7 @@
 }
 
 
-#templace-phone img {
+#template-phone img {
   position: relative;
   padding: 8px;
   width: 210px;
@@ -343,11 +343,11 @@
 #found {
   display: none;
 }
-#templace-phone a {
+#template-phone a {
   text-decoration: none;
 }
 
-#templace-phone p {
+#template-phone p {
   position: absolute;
 }
 }
@@ -380,13 +380,13 @@
     }
 }
 @media all and (max-width: 920px){
-  #templace-phone {
+  #template-phone {
     width: 690px;
     margin: auto;
     margin-top: 30px;
   }
 
-  #templace-phone img {
+  #template-phone img {
     position: relative;
     padding: 8px;
     width: 210px;
@@ -402,7 +402,7 @@
   }
 }
 @media all and (max-width: 700px){
-  #templace-phone {
+  #template-phone {
     width: 460px;
     margin: auto;
     margin-top: 30px;
@@ -410,7 +410,7 @@
   .cl {
     clear: both;
   }
-  #templace-phone img {
+  #template-phone img {
     position: relative;
     padding: 8px;
     width: 210px;
@@ -572,13 +572,13 @@
     display: none;
   }
 
-  #templace-phone {
+  #template-phone {
     width: 310px;
     margin: auto;
     margin-top: 100px;
   }
 
-  #templace-phone img {
+  #template-phone img {
     padding-top: 77px;
     position: relative;
     padding: 10px;

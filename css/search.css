@@ -107,26 +107,26 @@ body {
     background-color: #efefef;
 }
 
-#templace {
+#template {
     width: 950px;
     float: right;
     margin-right: 6%;
 
 }
 
-#templace img {
+#template img {
     position: relative;
     padding: 8px;
     width: 210px;
     height: 210px;
 }
 
-#templace a {
+#template a {
     text-decoration: none;
 
 }
 
-#templace p {
+#template p {
     position: absolute;
 }
 
@@ -134,6 +134,7 @@ body {
     width: 100%;
     height: 101px;
     background-color: white;
+    margin-top: 50px;
 }
 
 .shakira-box {
@@ -299,8 +300,12 @@ body {
     /*background:#000;*/
 }
 
+#menu img {
+    float: left;
+}
+
 #menu p {
-    float: right;
+    float: left;
     margin-top: 3px;
     padding-left: 4px;
 }
@@ -320,6 +325,10 @@ body {
     width: 90px;
     float: right;
     z-index: 10;
+}
+
+#more li {
+    width: inherit;
 }
 
 /*Tam giac more*/
@@ -504,30 +513,29 @@ body {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 14pt;
-    margin-bottom: 50px;
     margin-top: 50px;
+    margin-left: 20%;
     text-align: center;
-
+    display: block;
 }
 
 #paging-holder ul {
     list-style-type: none;
     background-color: #efefef;
     text-align: center;
+    border-collapse: collapse;
 }
 
 #paging-holder ul li {
     padding: 0;
-    margin: -3.2px;
     color: #ffffff;
-    display: inline-table;
-    border: 1px solid #b48484;
-    /* box-shadow: 0 0 10px #ededed;
-     border-radius: 0;*/
+    background: white;
+    display: inline;
+    float: left;
+    border: 1px solid lightgray;
 }
 
 #paging-holder ul li a {
-    padding: 0;
     margin: 0;
     color: blue;
     text-decoration: none;
@@ -535,35 +543,37 @@ body {
     /*border: 1px solid #595959;*/
     width: calc(4vw);
     height: 40px;
-    padding-top: 8px;
+    padding: 8px 0 0;
     line-height: 30px;
 }
 
-#paging-holder ul li a:hover, .current-page a {
+#paging-holder ul li a:hover {
     background: #2363c3;
-    color: white !important;
+    color: white;
+    cursor: pointer;
 }
 
-.disabled a {
-    color: grey !important;
-}
-
-.disabled a:hover {
-    background-color: #efefef !important;
-}
-
-.disabled a:hover i {
-    color: grey !important;
+.number-template {
+    display: inline;
 }
 
 .selected {
-    border-radius: 5px;
     background-color: #3366FF;
+    border-radius: 5px;
 }
 
 .selected p {
     color: white;
 }
 
-.page-number {
+.disabled a, .disabled a:hover {
+    background: lightgray !important;
+    color: gray !important;
+    cursor: default !important;
+}
+
+.current a, .current a:hover {
+    background: #2363c3 !important;
+    color: white !important;
+    cursor: default !important;
 }
