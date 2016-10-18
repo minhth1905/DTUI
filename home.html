@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress HtmlUnknownAttribute -->
 <html>
 <head>
     <title>Adobe Template - Free templates for everyone</title>
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logos/favicon_16x16.png">
     
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/homeresponsive.css">
     <link rel="stylesheet" type="text/css" href="css/font.css">
     
@@ -19,17 +20,10 @@
                 $('#menu-phone').slideToggle('slow');
             });
         });
-        
+    
         function myFunction(x) {
             x.classList.toggle("change");
         }
-        
-        $(function () {
-            $("#searchBtn").click(function () {
-                var tmp = $("#input-search").val()
-                location.href = "Search.html?key=" + tmp;
-            });
-        });
     </script>
 </head>
 <body>
@@ -46,7 +40,6 @@
             <div id="network">
                 <a href='http://www.facebook.com/sharer.php?s=100&p[url]=http://www.dtuisix.esy.es' rel='nofollow'><img
                         src="images/socials/facebook.png" target="_blank"></a>
-                <script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share' type='text/javascript'></script>
                 <a href="https://plus.google.com/share?url=http://www.dtuisix.esy.es"><img
                         src="images/socials/googleplus.png" class="img"></a>
                 <a href="http://www.stumbleupon.com/submit?url=http://www.dtuisix.esy.es"><img
@@ -292,7 +285,7 @@
     <div id="template"></div>
     <div class="cl"></div>
     <div id="all_template">
-        <a href="#" id="see_all_a">
+        <a href="Search.html" id="see_all_a">
             <div id="see_all">
                 See all templates
             </div>

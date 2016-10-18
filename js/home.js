@@ -1,11 +1,17 @@
 /**
  * Created by nguye on 10/9/2016.
  */
-$(function () {
-    $("#buttom-search").click(function () {
-        var tmp = $("#input-search").val();
-        location.href = "Search.html?key=" + tmp;
-    });
+$("#searchBtn").click(function () {
+    var temp = $("#input-search").val().trim();
+    if (temp != "") {
+        location.href = "Search.html?key=" + encodeURI(temp);
+    }
+});
+
+$("#input-search").on("keyup", function (event) {
+    if (event.keyCode == 13) {
+        $("#searchBtn").click();
+    }
 });
 
 function onMockupLoaded(mockups) {
