@@ -26,6 +26,9 @@
   .cmt-phone {
     display: none;
   }
+  .download-phone {
+    display: none;
+  }
 }
 
 @media all and (max-width: 980px){
@@ -187,6 +190,9 @@
   .cmt-phone a{
     font-size: 10px;
   }
+ /*  #template-img {
+    width: 90%;
+  } */
 
 }
 
