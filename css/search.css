@@ -146,6 +146,12 @@ body {
     padding-top: 10px;
 }
 
+.shakira-box i {
+    margin-left: 10px;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
 .shakira-box a {
     text-decoration: none;
 }
