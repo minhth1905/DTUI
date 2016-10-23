@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Myriad Pro', sans-serif;
-    background-color: #efefef;
+    background-color: #f5f8f9;
 }
 
 /*menu*/
@@ -33,7 +33,9 @@ body {
 #template-img {
     width: 90%;
     padding-left: 5%;
-    height: 626px;
+    /* height: 626px; */
+    height: same-as-width;
+
 }
 
 input[type="text"] {
@@ -89,6 +91,7 @@ input[type="text"] {
     padding-left: 6%;
     padding-right: 6%;
     background-color: #efefef;
+    margin-top: -11px;
 }
 
 .menu__item--left {
@@ -153,9 +156,8 @@ input[type="text"] {
 #detail-left {
     margin-top: 10px;
     /* border: 1px solid;*/
-    box-shadow: 5px 5px 5px #666;
-    -moz-box-shadow: 5px 5px 5px #666;
-    -webkit-box-shadow: 1px 1px 5px #666;
+   border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
     margin-left: 8%;
     width: 55%;
     float: left;
@@ -315,9 +317,8 @@ input[type="text"] {
 
 #detail-right {
     margin-top: 10px;
-    box-shadow: 5px 5px 5px #666;
-    -moz-box-shadow: 5px 5px 5px #666;
-    -webkit-box-shadow: 1px 1px 5px #666;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
     margin-right: 8%;
     width: 25%;
     float: right;
@@ -345,14 +346,31 @@ input[type="text"] {
 
 /**** CHUA XONG (end) *******/
 
-#img-size {
+.static {
     width: 90%;
     margin: auto;
-    background-color: #efefef;
     margin-top: 32px;
     height: 150px;
-    position: relative;
     z-index: 2;
+    position: relative;
+    border: 1px solid #f5f8f9;
+    border-radius: 5px;
+    background-color: #f5f8f9;
+}
+
+/* .static {
+
+} */
+
+.fixed {
+    border: 1px solid #f5f8f9;
+    border-radius: 5px;
+    background-color: #f5f8f9;
+    position: fixed; top: 0px;
+    width: 23%;
+    margin-left: 1%;
+    height: 150px;
+    border: 1px solid #56aa29;
 }
 
 #img-size a {
@@ -360,8 +378,18 @@ input[type="text"] {
     color: black;
 }
 
-#img-size p {
-    padding: 20px;
+#img-size p:nth-child(2) {
+    margin-top: 0;
+    background-color: #f5f8f9;
+}
+#img-size p:first-child {
+    background-color: #56aa29;
+    border-radius: 5px;
+    padding: 4px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    margin-top: 0;
+    cursor: pointer;
 }
 
 #buy {
@@ -393,10 +421,17 @@ input[type="text"] {
 .more-Dtui {
     margin: auto;
     width: 90%;
-    height: 756px;
     background-color: #efefef;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.height1 {
+    height: 656px;
+}
+
+.height2 {
+    height: 832px;
 }
 
 .more-Dtui p {
@@ -414,7 +449,15 @@ input[type="text"] {
     height: 100%;
 }
 
-.Dtui-box {
+.height1 .Dtui-box {
+    float: left;
+    width: 43%;
+    height: 19%;
+    overflow: hidden;
+    padding: 3.125%;
+}
+
+.height2 .Dtui-box {
     float: left;
     width: 43%;
     height: 16%;
@@ -660,4 +703,32 @@ input[type="text"] {
     border-bottom: 9px solid white;
 }
 
+.fa-thumbs-o-up:hover {
+    color: red;
+    cursor: pointer;
+}
 
+.fa-download {
+    color: #357613;
+    padding-left: 12px;
+}
+.download-phone {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 73px;
+    border-radius: 5px;
+}
+
+.download-left {
+    width: 80%;
+    float: left;
+    background-color: #56aa29;
+}
+
+
+.download-right {
+    width: 20%;
+    float: left;
+    background-color: beige;
+}
