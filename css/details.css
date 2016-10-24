@@ -107,7 +107,6 @@ body {
     margin-top: 10px;
     /* border: 1px solid;*/
     border-radius: 0 0 4px 4px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 1px 0 rgba(0, 0, 0, 0.2);
     margin-left: 8%;
     width: 55%;
     float: left;
@@ -195,13 +194,17 @@ body {
   float: left;
 */
 #comment {
-    font-size: 12px;
+    font-size: 15px;
     padding-left: 5%;
-    padding-top: 20px;
+    padding-top: 5px;
+    margin-bottom: 10px;
 }
 
 #comment span {
     color: red;
+}
+
+#noname {
 }
 
 #noname img {
@@ -209,9 +212,14 @@ body {
 }
 
 #noname textarea {
-    width: 85%;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.2) inset,0 1px 0 rgba(255,255,255,0.5);
+    border-color: #efefef;
+    border-style: solid;
+    border-radius: 5px; 
+    width: 84%;
     height: 56px;
     margin-left: 2%;
+    margin-bottom: 20px;
     float: left;
 }
 
@@ -224,9 +232,9 @@ body {
 .cmt-demo .ncmt-demo {
     float: left;
     width: 80%;
-    border: 2px solid #e0e0d1;
+    border: 1px solid #efefef;
     margin-left: 2%;
-    margin-top: 20px;
+    margin-bottom: 40px;
     border-radius: 5px;
 }
 
@@ -245,8 +253,9 @@ body {
 }
 
 .ncmt-demo p {
-    font-size: 14px;
-    padding-left: 5%;
+    color: #777;
+    font-size: 15px;
+    padding-left: 3%;
 }
 
 #red {
@@ -259,10 +268,19 @@ body {
 
 .name-cmt {
     padding-left: 12%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     /* text-align: center; */
     margin-top: 0;
     border-bottom: 1px #e0e0d1;
-    background-color: beige;
+    background-color: #efefef;
+}
+
+.no-display {
+}
+
+.text-comment-img {
+    background-color: #efefef; 
 }
 
 #detail-right {
@@ -342,6 +360,7 @@ body {
     padding-top: 20px;
     padding-bottom: 16px;
     margin-top: 0;
+    z-index: 2;
     cursor: pointer;
 }
 
@@ -482,6 +501,7 @@ body {
 }
 
 #footer {
+    margin-top: 50px;
     width: 100%;
     height: 101px;
     background-color: white;
