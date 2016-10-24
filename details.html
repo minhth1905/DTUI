@@ -25,20 +25,21 @@
         function myFunction(x) {
             x.classList.toggle("change");
         }
-        var elementPosition = $('#img-size').offset();
-        var iScrollPos = 150;
+        //        var elementPosition = $('#img-size').offset();
+        //        var iScrollPos = 150;
         $(window).scroll(function () {
             var st = $(this).scrollTop();
-            if (window.pageYOffset > $('#img-size').offset().top + 1) {
+            var imgSize = $('#img-size');
+            if (window.pageYOffset > imgSize.offset().top + 1) {
                 if (st > 150) {
-                    $('#img-size').removeClass("static");
-                    $('#img-size').addClass("fixed");
+                    imgSize.removeClass("static");
+                    imgSize.addClass("fixed");
                 }
             }
             else {
                 if (st <= 150) {
-                    $('#img-size').removeClass("fixed");
-                    $('#img-size').addClass("static");
+                    imgSize.removeClass("fixed");
+                    imgSize.addClass("static");
                 }
             }
         });
@@ -53,8 +54,8 @@
         <div id="top-bar">
             <div id="logo">
                 <a href="home.html">
-                    <img src="images/logo--red.png" class="logo-red">
-                    <img src="images/logo.png" class="logo-img">
+                    <img src="images/logos/logo-color-withtext.png" class="logo-red">
+                    <img src="images/logos/logo-color-notext.png" class="logo-img">
                 </a>
             </div>
             <div id="top_banner">
@@ -65,7 +66,7 @@
             </div>
             <div id="network">
                 <a href='http://www.facebook.com/sharer.php?s=100&p[url]=http://www.dtuisix.esy.es' rel='nofollow'><img
-                        src="images/socials/facebook.png" target="_blank"></a>
+                        src="images/socials/facebook.png"></a>
                 <a href="https://plus.google.com/share?url=http://www.dtuisix.esy.es"><img
                         src="images/socials/googleplus.png" class="img"></a>
                 <a href="http://www.stumbleupon.com/submit?url=http://www.dtuisix.esy.es"><img
@@ -79,43 +80,43 @@
 <div class="clear"></div>
 <div id="menu">
     <ul>
-        <li class="menu__item--left"><a href="Search.html"><img src="images/Psicon.png">
+        <li class="menu__item--left"><a href="Search.html"><img src="images/icons/16x16/ps.png">
             <p>Photoshop</p>
         </a>
         </li>
-        <li class="menu__item--left"><a href="Search.html"><img src="images/Enicon.png">
+        <li class="menu__item--left"><a href="Search.html"><img src="images/icons/16x16/en.png">
             <p>Encore</p>
         </a>
         </li>
-        <li class="menu__item--left"><a href="Search.html"><img src="images/Aeicon.png">
+        <li class="menu__item--left"><a href="Search.html"><img src="images/icons/16x16/ae.png">
             <p>Affter Effects</p>
         </a>
         </li>
-        <li class="menu__item--left"><a href="Search.html"><img src="images/Pricon.png">
+        <li class="menu__item--left"><a href="Search.html"><img src="images/icons/16x16/pr.png">
             <p>Premiere Pro</p>
         </a>
         </li>
-        <li class="menu__item--left"><a href="Search.html"><img src="images/Idicon.png">
+        <li class="menu__item--left"><a href="Search.html"><img src="images/icons/16x16/id.png">
             <p>InDesign</p>
         </a>
         </li>
         <li class="menu__item--left" id="respon-4">
-            <a href="Search.html"><img src="images/Flicon.png">
+            <a href="Search.html"><img src="images/icons/16x16/fl.png">
                 <p>Flash</p>
             </a>
         </li>
         <li class="menu__item--left" id="respon-3">
-            <a href="Search.html"><img src="images/Fbicon.png">
+            <a href="Search.html"><img src="images/icons/16x16/fb.png">
                 <p>Flash Builder</p>
             </a>
         </li>
         <li class="menu__item--left" id="respon-2">
-            <a href="Search.html"><img src="images/Aiicon.png">
+            <a href="Search.html"><img src="images/icons/16x16/ai.png">
                 <p>Illustrator</p>
             </a>
         </li>
         <li class="menu__item--left" id="respon-1">
-            <a href="Search.html"><img src="images/Bricon.png">
+            <a href="Search.html"><img src="images/icons/16x16/br.png">
                 <p>Bridge</p>
             </a>
         </li>
@@ -128,52 +129,52 @@
             
             <ul style="margin-top: 22px;z-index: 10; border: 1px solid;">
                 <li id="show_1">
-                    <a href="Search.html"><img src="images/Bricon.png">
+                    <a href="Search.html"><img src="images/icons/16x16/br.png">
                         <p>Bridge</p>
                     </a>
                 </li>
                 <li id="show_2">
-                    <a href="Search.html"><img src="images/Aiicon.png">
+                    <a href="Search.html"><img src="images/icons/16x16/ai.png">
                         <p>Illustrator</p>
                     </a>
                 </li>
                 <li id="show_3">
-                    <a href="Search.html"><img src="images/Fbicon.png">
+                    <a href="Search.html"><img src="images/icons/16x16/fb.png">
                         <p>Flash Builder</p>
                     </a>
                 </li>
                 <li id="show_4">
-                    <a href="Search.html"><img src="images/Flicon.png">
+                    <a href="Search.html"><img src="images/icons/16x16/fl.png">
                         <p>Flash</p>
                     </a>
                 </li>
                 <li>
-                    <a href="Search.html"><img src="images/Fwicon.png">
+                    <a href="Search.html"><img src="images/icons/16x16/fw.png">
                         <p>Fireworks</p>
                     </a>
                 </li>
                 <li><a href="Search.html">
-                    <img src="images/Dwicon.png">
+                    <img src="images/icons/16x16/dw.png">
                     <p>Dreamweaver</p>
                 </a>
                 </li>
                 <li><a href="Search.html">
-                    <img src="images/Auicon.png">
+                    <img src="images/icons/16x16/au.png">
                     <p>Audition</p>
                 </a>
                 </li>
                 <li><a href="Search.html">
-                    <img src="images/Sgicon.png">
+                    <img src="images/icons/16x16/sg.png">
                     <p>SpeedGrade</p>
                 </a>
                 </li>
                 <li><a href="Search.html">
-                    <img src="images/Plicon.png">
+                    <img src="images/icons/16x16/pl.png">
                     <p>Prelude</p>
                 </a>
                 </li>
                 <li><a href="Search.html">
-                    <img src="images/Lricon.png">
+                    <img src="images/icons/16x16/lr.png">
                     <p>Lightroom</p>
                 </a>
                 </li>
@@ -188,11 +189,11 @@
     <div id="header-phone">
         <div id="top-bar-phone">
             <div id="logo-phone">
-                <img src="images/logo.png">
+                <a href="home.html"> <img src="images/logos/logo-color-notext.png"></a>
             </div>
             <div id="top_banner_phone">
                 <fieldset id="search-phone">
-                    <input type="text"/>
+                    <input type="text" title=""/>
                     <div class="show-menu" onclick="myFunction(this, 'menu-phone')">
                         <div class="menu-icon"></div>
                         <div class="menu-icon"></div>
@@ -295,7 +296,7 @@
                 <!-- <div id="phone-details">
                     <a href="#">Download</a>
                 </div> -->
-                <a href="#"><img id="template-img" width="100%" height="auto"></a>
+                <a href="#"><img id="template-img" width="100%" height="auto" src=""></a>
             </div>
             <div id="n-information">
                 <div id="information-top">
@@ -313,72 +314,36 @@
                 </div>
                 <div id="information-bottom">
                     <ul>
-                        <a href="#">
-                            <li>Background</li>
-                        </a>
-                        <a href="#">
-                            <li>Abstract background</li>
-                        </a>
-                        <a href="#">
-                            <li>Abstract</li>
-                        </a>
-                        <a href="#">
-                            <li>Watercolor</li>
-                        </a>
-                        <a href="#">
-                            <li>Hand</li>
-                        </a>
-                        <a href="#">
-                            <li>Texture</li>
-                        </a>
-                        <a href="#">
-                            <li>Art</li>
-                        </a>
-                        <a href="#">
-                            <li>Modern</li>
-                        </a>
-                        <a href="#">
-                            <li>Backdrop</li>
-                        </a>
-                        <a href="#">
-                            <li>Style</li>
-                        </a>
-                        <a href="#">
-                            <li>Texture background</li>
-                        </a>
-                        <a href="#">
-                            <li>Stains</li>
-                        </a>
-                        <a href="#">
-                            <li>Atistic</li>
-                        </a>
-                        <a href="#">
-                            <li>Background texture</li>
-                        </a>
-                        <a href="#">
-                            <li>Hand painted</li>
-                        </a>
-                        <a href="#">
-                            <li>Painted</li>
-                        </a>
-                        <a href="#">
-                            <li>Watery</li>
-                        </a>
+                        <li><a href="#">Background</a></li>
+                        <li><a href="#">Abstract background</a></li>
+                        <li><a href="#">Abstract</a></li>
+                        <li><a href="#">Watercolor</a></li>
+                        <li><a href="#">Hand</a></li>
+                        <li><a href="#">Texture</a></li>
+                        <li><a href="#">Art</a></li>
+                        <li><a href="#">Modern</a></li>
+                        <li><a href="#">Backdrop</a></li>
+                        <li><a href="#">Style</a></li>
+                        <li><a href="#">Texture background</a></li>
+                        <li><a href="#">Stains</a></li>
+                        <li><a href="#">Atistic</a></li>
+                        <li><a href="#">Background texture</a></li>
+                        <li><a href="#">Hand painted</a></li>
+                        <li><a href="#">Painted</a></li>
+                        <li><a href="#">Watery</a></li>
                     </ul>
                 </div>
             </div>
             <div id="comment">
                 <p><span>DTUI Team</span> -Add a Comment</p>
                 <div id="noname">
-                    <a href="#"><img src="images/user.png"
-                                     width="8%" height="auto"></a>
-                    <input type="textarea" name="cmt"/>
+                    <a href="#"><img src="images/user.png" class="img-user"></a>
+                    <textarea name="cmt" title=""></textarea>
                 </div>
             </div>
             
             <div class="cmt-demo">
-                <a href="#"><img src="images/user.png"
-                                 width="8%" height="auto"></a>
+                <a href="#"><img src="images/user.png" class="img-user"></a>
                 <div class="ncmt-demo">
                     <div class="text-comment-img">
                         <p class="name-cmt"><a href="#">Huu Minh Tran</a>
@@ -390,8 +355,7 @@
                 </div>
             </div>
             <div class="cmt-demo">
-                <a href="#"><img src="images/user.png"
-                                 width="8%" height="auto"></a>
+                <a href="#"><img src="images/user.png" class="img-user"></a>
                 <div class="ncmt-demo">
                     <p class="name-cmt"><a href="#">Fizz, Ngoc Nhu</a>
                         <span>Sep 29, 2016 | Hobbysit Digital Artist</span></p>
@@ -401,8 +365,7 @@
                 </div>
             </div>
             <div class="cmt-demo">
-                <a href="#"><img src="images/user.png"
-                                 width="8%" height="auto"></a>
+                <a href="#"><img src="images/user.png" class="img-user"></a>
                 <div class="ncmt-demo">
                     <p class="name-cmt"><a href="#">Truong Nhung</a> <span>Sep 29, 2016 | Hobbysit Digital Artist</span>
                     </p>
@@ -412,8 +375,7 @@
                 </div>
             </div>
             <div class="cmt-demo">
-                <a href="#"><img src="images/logo.png" border="1px solid black"
-                                 width="8%" height="auto"></a>
+                <a href="#"><img src="images/logos/logo-color-notext.png" class="img-user"></a>
                 <div class="ncmt-demo">
                     <p class="name-cmt"><a href="#" id="red">DTUI Team</a>
                         <span>Sep 29, 2016 | Hobbysit Digital Artist</span></p>
@@ -424,8 +386,7 @@
                 </div>
             </div>
             <div class="cmt-demo">
-                <a href="#"><img src="images/user.png"
-                                 width="8%" height="auto"></a>
+                <a href="#"><img src="images/user.png" class="img-user"></a>
                 <div class="ncmt-demo" style="margin-bottom: 20px;">
                     <p class="name-cmt"><a href="#">Jopen Nguyen</a> <span>Sep 29, 2016 | Hobbysit Digital Artist</span>
                     </p>
@@ -448,7 +409,8 @@
             <div class="more-Dtui height1">
                 <p>More from <span><a href="#">DTUI Team</a></span></p>
                 <div class="Dtui-box">
-                    <a href="#"><img src="images/image1.jpg"></a>
+                    <a href="#"><img
+                            src="images/mockups/ai/abstract-background-in-colorful-style_23-2147513886.jpg"></a>
                 </div>
                 <div class="Dtui-box">
                     <a href="#"><img
@@ -545,7 +507,7 @@
     <div id="footer">
         <div id="left">
             <div id="logo-footer">
-                <img src="images/logo--gray.png">
+                <img src="images/logos/logo-bw-withtext.png">
             </div>
             <div id="text-intro">
                 <p>Free templates for everyone</p>

@@ -21,19 +21,6 @@ body {
 
 }
 
-#text_logo span {
-    font-family: 'myFont';
-    font-weight: bold;
-    font-size: 25pt;
-    font-style: italic;
-    color: #d51d24;
-    word-spacing: 0.25px;
-}
-
-#text_logo {
-    float: right;
-}
-
 #top_banner {
     float: left;
     width: 35%;
@@ -62,6 +49,7 @@ body {
     position: relative;
 }
 
+/*noinspection CssOverwrittenProperties*/
 .clear {
     clear: left;
     clear: right;
@@ -159,7 +147,7 @@ body {
 #menu ul {
     margin: 0;
     list-style: none;
-    font-family: Arial, san-serif;
+    font-family: Arial, sans-serif;
     font-size: 12px;
     padding: 0;
 }

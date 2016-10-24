@@ -16,18 +16,6 @@ body {
     float: left;
 }
 
-#text_logo {
-    float: right;
-}
-
-#text_logo span {
-    font-weight: bold;
-    font-size: 28.54pt;
-    font-style: italic;
-    color: #d51d24;
-    word-spacing: 1px;
-}
-
 #menu {
     height: 37px;
     margin-left: 6%;
@@ -198,17 +186,6 @@ body {
     float: right;
     color: #a3a3a3;
     font-size: 14px;
-}
-
-#text_footer {
-    float: left;
-    padding-top: 29px;
-    font-family: 'feathericons', sans-serif;
-    font-weight: bold;
-    font-size: 28.54pt;
-    font-style: italic;
-    color: #d51d24;
-    word-spacing: 1px;
 }
 
 #text-intro {

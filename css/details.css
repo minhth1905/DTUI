@@ -35,18 +35,6 @@ body {
 
 }
 
-#text_logo {
-    float: right;
-}
-
-#text_logo span {
-    font-weight: bold;
-    font-size: 28.54pt;
-    font-style: italic;
-    color: #d51d24;
-    word-spacing: 1px;
-}
-
 #menu {
     height: 37px;
     padding-left: 6%;
@@ -109,6 +97,7 @@ body {
     padding-left: 19px;
 }
 
+/*noinspection CssOverwrittenProperties*/
 .clear {
     clear: left;
     clear: right;
@@ -118,7 +107,7 @@ body {
     margin-top: 10px;
     /* border: 1px solid;*/
     border-radius: 0 0 4px 4px;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 1px 0 rgba(0, 0, 0, 0.2);
     margin-left: 8%;
     width: 55%;
     float: left;
@@ -162,7 +151,7 @@ body {
 }
 
 #information-bottom ul {
-    padding: 0px;
+    padding: 0;
 
 }
 
@@ -219,7 +208,7 @@ body {
     float: left;
 }
 
-#noname input {
+#noname textarea {
     width: 85%;
     height: 56px;
     margin-left: 2%;
@@ -279,7 +268,7 @@ body {
 #detail-right {
     margin-top: 10px;
     border-radius: 0 0 4px 4px;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 1px 0 rgba(0, 0, 0, 0.2);
     margin-right: 8%;
     width: 25%;
     float: right;
@@ -297,11 +286,12 @@ body {
     width: 80%;
     height: 25px;
     background-color: #efefef;
-    border: 0px;
+    border: 0;
 }
 
 #n-search button::before {
-    font-family: 'feathericons';
+    /*font-family: 'feathericons';*/
+    /*Dùng font-awesome đi*/
     content: '\E116';
 }
 
@@ -324,14 +314,14 @@ body {
 } */
 
 .fixed {
-    border: 1px solid #f5f8f9;
     border-radius: 5px;
     background-color: #f5f8f9;
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 23%;
     margin-left: 1%;
     height: 150px;
+    /*border: 1px solid #f5f8f9;*/
     border: 1px solid #56aa29;
 }
 
@@ -358,8 +348,8 @@ body {
 #buy {
     width: 49%;
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 0;
+    bottom: 0;
     border: 1px solid #e0e0d1;
     text-align: center;
     height: 30px;
@@ -371,8 +361,8 @@ body {
 #download {
     width: 49%;
     position: absolute;
-    right: 0px;
-    bottom: 0px;
+    right: 0;
+    bottom: 0;
     border: 1px solid #e0e0d1;
     text-align: center;
     height: 30px;
@@ -433,6 +423,7 @@ body {
     opacity: 1;
 }
 
+/*noinspection CssUnknownProperty*/
 .Dtui-box .dtuiImg-content {
     width: 100%;
     height: 5px;
@@ -448,7 +439,7 @@ body {
 }
 
 .Dtui-box .dtuiImg-header {
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     height: 5px;
     margin: 0;
     font-size: 6pt;
@@ -463,27 +454,6 @@ body {
 
 .Dtui-box:hover .dtuiImg-content {
     top: -80px;
-}
-
-.icon-eye::before {
-    color: white;
-    content: '\e000';
-    font-family: 'feathericons';
-    font-size: 6px;
-}
-
-.icon-paper-clip::before {
-    color: white;
-    content: '\e001';
-    font-family: 'feathericons';
-    font-size: 6px;
-}
-
-.icon-heart::before {
-    color: white;
-    content: '\e024';
-    font-family: 'feathericons';
-    font-size: 6px;
 }
 
 #vg {
@@ -514,17 +484,6 @@ body {
 #right {
     padding-right: 8%;
     float: right;
-}
-
-#text_footer {
-    float: left;
-    padding-top: 29px;
-    font-family: 'myFont';
-    font-weight: bold;
-    font-size: 28.54pt;
-    font-style: italic;
-    color: #d51d24;
-    word-spacing: 0.5px;
 }
 
 #text-intro {
@@ -558,7 +517,7 @@ body {
 /*sub-menu*/
 #menu ul {
     list-style: none;
-    font-family: Arial, san-serif;
+    font-family: Arial, sans-serif;
     font-size: 12px;
     padding: 0;
 }
@@ -694,4 +653,9 @@ body {
     width: 20%;
     float: left;
     background-color: beige;
+}
+
+.img-user {
+    width: 8%;
+    height: auto
 }

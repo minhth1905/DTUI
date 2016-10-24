@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<html >
-  <head>
+<html>
+<head>
     <meta charset="UTF-8">
     <title>Flat Responsive Form using CSS3 & HTML5 </title>
     <link rel="stylesheet" href="css/contact.css">
-  </head>
-  <body>
+</head>
+<body>
 
-    <div id="form-main">
-  <div id="form-div">
-    <div class="logo" style="text-align: center; margin-bottom: 30px;">
-      <a href="home.html" title=""><img src="images/logos/logo-color-withtext.png"></a>
+<div id="form-main">
+    <div id="form-div">
+        <div class="logo" style="text-align: center; margin-bottom: 30px;">
+            <a href="home.html" title=""><img src="images/logos/logo-color-withtext.png"></a>
+        </div>
+        <form class="form" id="form1">
+            
+            <p class="name">
+                <input name="name" type="text"
+                       class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name"
+                       id="name"/>
+            </p>
+            
+            <p class="email">
+                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email"
+                       placeholder="Email"/>
+            </p>
+            
+            <p class="text">
+                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment"
+                          placeholder="Write your question"></textarea>
+            </p>
+            <div class="submit">
+                <input type="submit" value="SEND" id="button-blue"/>
+                <div class="ease"></div>
+            </div>
+        </form>
     </div>
-    <form class="form" id="form1">
-
-      <p class="name">
-        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
-      </p>
-
-      <p class="email">
-        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
-      </p>
-
-      <p class="text">
-        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Write your question"></textarea>
-      </p>
-      <div class="submit">
-        <input type="submit" value="SEND" id="button-blue"/>
-        <div class="ease"></div>
-      </div>
-    </form>
-  </div>
-  </body>
+</div>
+</body>
 </html>
