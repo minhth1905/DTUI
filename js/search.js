@@ -99,3 +99,9 @@ $("#sortby").find("a").click(function () {
 $("#search").find("a").click(function () {
     reload();
 });
+
+$(function () {
+    $('#user-phone').click(function () {
+        $('#share').slideToggle('slow');
+    });
+});
