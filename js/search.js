@@ -8,7 +8,8 @@ function onMockupLoaded(mockups) {
     _mockups = mockups;
     var length = mockups.length;
     $(".number-template").text(length + " ");
-    randomMockup(mockups, 20);
+    randomMockup(mockups, 20, "#template");
+    randomMockup(mockups, 18, "#template-phone");
 }
 
 function reload() {

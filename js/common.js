@@ -25,7 +25,7 @@ $.getJSON("json/mockups.json", function (mockups) {
     onMockupLoaded(mockups);
 });
 
-function randomMockup(mockups, size) {
+function randomMockup(mockups, size, id) {
     var ids = [];
     for (var box = 0; box < size; box++) {
         var rand_id = randomMockupId(mockups, ids);
@@ -34,7 +34,7 @@ function randomMockup(mockups, size) {
         var rand_like = Math.round(Math.random() * 999);
         var rand_see = Math.round(Math.random() * 999);
         var rand_down = Math.round(Math.random() * 999);
-        $("#template").append($("<div>").addClass("shakira-box").attr("mockup-id", mockup.id)
+        $(id).append($("<div>").addClass("shakira-box").attr("mockup-id", mockup.id)
             .append($("<img>").addClass("preview").attr("src", getPreviewImage(mockup)))
             .append($("<div>").addClass("icon_0")
                 .append($("<img>").attr("src", getCategoryIcon24x24(mockup))))

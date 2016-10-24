@@ -15,7 +15,7 @@ $("#input-search").on("keyup", function (event) {
 });
 
 function onMockupLoaded(mockups) {
-    randomMockup(mockups, 20);
+    randomMockup(mockups, 20, "#template");
 }
 
 $("#tag-list").find("a").each(function () {
