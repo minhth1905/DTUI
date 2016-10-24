@@ -5,14 +5,14 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logos/favicon_16x16.png">
-    
+
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/details.css">
     <link rel="stylesheet" type="text/css" href="css/searchbar.css">
     <link rel="stylesheet" type="text/css" href="css/searchresponsive.css">
     <link rel="stylesheet" type="text/css" href="css/detailsresponsive.css">
     <link rel="stylesheet" type="text/css" href="css/font.css">
-    
+
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome-4.6.3/css/font-awesome.min.css"/>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script>
@@ -21,29 +21,29 @@
                 $('#menu-phone').slideToggle('slow');
             });
         });
-        
+
         function myFunction(x) {
             x.classList.toggle("change");
         }
         //        var elementPosition = $('#img-size').offset();
         //        var iScrollPos = 150;
-        $(window).scroll(function () {
-            var st = $(this).scrollTop();
-            var imgSize = $('#img-size');
-            if (window.pageYOffset > imgSize.offset().top + 1) {
-                if (st > 150) {
-                    imgSize.removeClass("static");
-                    imgSize.addClass("fixed");
-                }
-            }
-            else {
-                if (st <= 150) {
-                    imgSize.removeClass("fixed");
-                    imgSize.addClass("static");
-                }
-            }
-        });
-    
+        // $(window).scroll(function () {
+        //     var st = $(this).scrollTop();
+        //     var imgSize = $('#img-size');
+        //     if (window.pageYOffset > imgSize.offset().top + 1) {
+        //         if (st > 150) {
+        //             imgSize.removeClass("static");
+        //             imgSize.addClass("fixed");
+        //         }
+        //     }
+        //     else {
+        //         if (st <= 150) {
+        //             imgSize.removeClass("fixed");
+        //             imgSize.addClass("static");
+        //         }
+        //     }
+        // });
+
     </script>
 </head>
 <body>
@@ -126,7 +126,7 @@
                     <span class="triangle_down"></span>
                 </p>
             </a>
-            
+
             <ul style="margin-top: 22px;z-index: 10; border: 1px solid;">
                 <li id="show_1">
                     <a href="Search.html"><img src="images/icons/16x16/br.png">
@@ -241,7 +241,7 @@
                         <span>Flash Builder</span>
                     </a>
                 </li>
-            
+
             </ul>
         </div>
         <div class="menu-right">
@@ -284,8 +284,8 @@
         </div>
     </div>
     <!-- end -->
-    
-    
+
+
     <div class="clear"></div>
     <div id="main-details">
         <div id="detail-left">
@@ -336,12 +336,15 @@
             </div>
             <div id="comment">
                 <p><span>DTUI Team</span> -Add a Comment</p>
+                 <div id="noname">
+                    <input type="text" placeholder="Name" style="width: 85%; margin-left: 10%; height: 20px;"></input>
+                </div>
                 <div id="noname">
                     <a href="#"><img src="images/user.png" class="img-user"></a>
                     <textarea name="cmt" title=""></textarea>
                 </div>
             </div>
-            
+
             <div class="cmt-demo">
                 <a href="#"><img src="images/user.png" class="img-user"></a>
                 <div class="ncmt-demo">
@@ -398,9 +401,11 @@
         </div>
         <div id="detail-right">
             <div id="img-size" class="static">
-                <p><i class="fa fa-download" aria-hidden="true" style="font-size: 40px;"></i><span
+            <a href="images/mockups/ps/billboard-mockup_1022-7.jpg" download>
+              <p><i class="fa fa-download" aria-hidden="true" style="font-size: 40px;"></i><span
                         style="font-size: 20px; position: relative;top: -10px; left: 4%; font-weight: bold; color: white;">Free download Template</span>
                 </p>
+            </a>
                 <p style="text-align: center; font-size: 40px;"><i class="fa fa-thumbs-o-up"
                                                                    aria-hidden="true"></i><span
                         style="font-size: 20px; position: relative;top: -7px; left: 4%; font-weight: bold; color: #357613;">1456</span>
@@ -408,7 +413,6 @@
             </div>
             <div class="more-Dtui height1">
                 <p>More from <span><a href="#">DTUI Team</a></span></p>
-
                 <div class="Dtui-box">
                     <a href="#"><img
                             src="images/mockups/ai/abstract-background-in-colorful-style_23-2147513886.jpg"></a>
@@ -440,10 +444,6 @@
                 <div class="Dtui-box">
                     <a href="#"><img
                             src="https://s-media-cache-ak0.pinimg.com/564x/7c/0a/c9/7c0ac94b05914f7c8f0c52158facb2ce.jpg"></a>
-                </div>
-                <div class="Dtui-box">
-                    <a href="#"><img
-                            src="https://s-media-cache-ak0.pinimg.com/236x/79/1c/50/791c50cd2042fb2f0be000e481d73870.jpg"></a>
                 </div>
                 <a href="#" id="vg">View Gallery >></a>
             </div>
@@ -485,9 +485,13 @@
                     <a href="#"><img
                             src="https://s-media-cache-ak0.pinimg.com/236x/5d/51/83/5d5183da83e447cf05679746ec5af10f.jpg"></a>
                 </div>
-                <a href="#" id="vg">View More >></a>
+                <div class="Dtui-box">
+                    <a href="#"><img
+                            src="https://s-media-cache-ak0.pinimg.com/236x/79/1c/50/791c50cd2042fb2f0be000e481d73870.jpg"></a>
+                </div>
+                <a href="#" id="vm">View More >></a>
             </div>
-        
+
         </div>
     </div>
     <div class="download-phone">
@@ -495,7 +499,7 @@
             <p><i class="fa fa-download" aria-hidden="true" style="font-size: 40px;"></i><span
                     style="font-size: 20px; position: relative;top: -10px; left: 4%; font-weight: bold; color: white;">Free download Template</span>
             </p>
-        
+
         </div>
         <div class="download-right">
             <p style="text-align: center; font-size: 40px; margin-top: 18px;"><i class="fa fa-thumbs-o-up"
@@ -525,7 +529,7 @@
                 Copyright © 2016 freepik.com
             </div>
         </div>
-    
+
     </div>
 </div>
 <script src="js/details.js"></script>
