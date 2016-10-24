@@ -31,6 +31,9 @@ function randomMockup(mockups, size) {
         var rand_id = randomMockupId(mockups, ids);
         ids.push(rand_id);
         var mockup = findMockup(mockups, rand_id);
+        var rand_like = Math.round(Math.random() * 999);
+        var rand_see = Math.round(Math.random() * 999);
+        var rand_down = Math.round(Math.random() * 999);
         $("#template").append($("<div>").addClass("shakira-box").attr("mockup-id", mockup.id)
             .append($("<img>").addClass("preview").attr("src", getPreviewImage(mockup)))
             .append($("<div>").addClass("icon_0")
@@ -39,11 +42,11 @@ function randomMockup(mockups, size) {
                 .append($("<h2>").addClass("shakira-header").text(mockup.short_name))
                 .append($("<p>").addClass("shakira-body")
                     .append($("<i>").addClass("fa fa-thumbs-o-up"))
-                    .append("13,86")
+                    .append(rand_like)
                     .append($("<i>").addClass("fa fa-eye"))
-                    .append("12,56")
+                    .append(rand_see)
                     .append($("<i>").addClass("fa fa-download"))
-                    .append("11,54")
+                    .append(rand_down)
                 )
             )
         )

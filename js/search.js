@@ -18,9 +18,6 @@ function reload() {
 
 var menu = $("#menu");
 function selectCategory(category) {
-    menu.find("li[category=\"" + category + "\"]").each(function () {
-        $(this).addClass("selected");
-    });
     menu.find("li").each(function () {
         var _category = $(this).attr("category");
         if (category == _category) {
