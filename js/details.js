@@ -8,3 +8,15 @@ function onMockupLoaded(mockups) {
     $("#template-name").text(mockup.name);
     $("#template-img").attr("src", getImage(mockup));
 }
+$("#searchBtn").click(function () {
+    var temp = $("#input-search").val().trim();
+    if (temp != "") {
+        location.href = "Search.html?key=" + encodeURI(temp);
+    }
+});
+
+$("#input-search").on("keyup", function (event) {
+    if (event.keyCode == 13) {
+        $("#searchBtn").click();
+    }
+});

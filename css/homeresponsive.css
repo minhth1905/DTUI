@@ -1,5 +1,5 @@
 /*Menu*/
-@media only screen and (min-width: 980px) and (max-width: 1900px) {
+@media only screen and (min-width: 980px) {
     #hearder-phone {
         display: none;
     }
@@ -14,6 +14,9 @@
 
     .menu-right {
         display: none;
+    }
+    #share {
+        display: none !important;
     }
 }
 
@@ -137,18 +140,49 @@
         display: none;
     }
 
+    #share {
+        display: none;
+    }
+
     #menu-phone {
         height: 287px;
         width: 100%;
         opacity: 2;
     }
 
+    #share ul {
+        list-style-type: none;
+        text-align: center;
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    #share li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+          color: #f1f1f1;
+          display: inline-block;
+          width: 25%;
+          height: 40px;
+          line-height: 40px;
+          margin-left: -5px;
+    }
+
+    #share a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
+    #share a:hover {
+        background: #F1F1F1;
+        color: #333;
+    }
+
     .menu-left {
         margin-top: -16px;
         float: left;
         width: 50%;
-        /*margin-left: 25%;*/
-        /*text-align: left;*/
     }
 
     .menu-left ul {

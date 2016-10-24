@@ -6,21 +6,27 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logos/favicon_16x16.png">
-    
+
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/homeresponsive.css">
     <link rel="stylesheet" type="text/css" href="css/font.css">
-    
+
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome-4.6.3/css/font-awesome.min.css"/>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    
+
     <script>
         $(function () {
             $('.show-menu').click(function () {
                 $('#menu-phone').slideToggle('slow');
             });
         });
-    
+
+        $(function () {
+            $('#user-phone').click(function () {
+                $('#share').slideToggle('slow');
+            });
+        });
+
         function myFunction(x) {
             x.classList.toggle("change");
         }
@@ -104,7 +110,7 @@
                     <i class="fa fa-caret-down" aria-hidden="true"></i>
                 </p>
             </a>
-            
+
             <ul style="margin-top: 29px;">
                 <li id="show_1" category="br">
                     <a href="Search.html?category=br"><img src="images/icons/16x16/br.png">
@@ -172,9 +178,9 @@
         <div class="bar2"></div>
         <div class="bar3"></div>
     </div>
-    
+
     <div id="user-phone">
-        <img src="images/user.png">
+        <img src="images/share.png">
     </div>
 </div>
 <!-- end -->
@@ -212,7 +218,7 @@
                     <span>Flash Builder</span>
                 </a>
             </li>
-        
+
         </ul>
     </div>
     <div class="menu-right">
@@ -253,6 +259,18 @@
             </li>
         </ul>
     </div>
+</div>
+<div id="share">
+    <ul>
+        <li><a href='http://www.facebook.com/sharer.php?s=100&p[url]=http://www.dtuisix.esy.es' rel='nofollow'><img
+                        src="images/socials/facebook.png" target="_blank"></a></li>
+        <li><a href="https://plus.google.com/share?url=http://www.dtuisix.esy.es"><img
+        src="images/socials/googleplus.png" class="img"></a></li>
+        <li><a href="http://www.stumbleupon.com/submit?url=http://www.dtuisix.esy.es"><img
+                        src="images/socials/stumbleupon.png" class="img"></a></li>
+        <li><a href="http://twitter.com/intent/tweet?text=Free vectors, photos and PSD Downloads - Freepik&url=http://www.dtuisix.esy.es"><img
+                        src="images/socials/twitter.png" class="img"></a></li>
+    </ul>
 </div>
 <!-- end -->
 <div id="top_banner">
@@ -304,9 +322,9 @@
     <div id="right">
         <ul>
             <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
+            <li><a href="support.html">Support</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         <div id="copyright">
             Copyright © 2016 freepik.com

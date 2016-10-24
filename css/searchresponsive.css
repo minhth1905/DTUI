@@ -15,6 +15,9 @@
   .menu-right {
     display: none;
   }
+   #share {
+      display: none !important;
+    }
 }
 @media all and (max-width: 1346px) {
     #menu li:hover #show_1 {
@@ -253,6 +256,40 @@
     width: 100%;
     opacity: 2;
   }
+
+
+  #share {
+    display: none;
+  }
+
+  #share ul {
+        list-style-type: none;
+        text-align: center;
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    #share li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+          color: #f1f1f1;
+          display: inline-block;
+          width: 25%;
+          height: 40px;
+          line-height: 40px;
+          margin-left: -5px;
+    }
+
+    #share a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
+    #share a:hover {
+        background: #F1F1F1;
+        color: #333;
+    }
 
   .menu-left {
     margin-top: -16px;
