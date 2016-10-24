@@ -137,63 +137,6 @@ body {
     margin-top: 50px;
 }
 
-.shakira-box {
-    box-shadow: -2px 16px 4px -14px gray;
-    float: left;
-    width: 230px;
-    height: 217px;
-    overflow: hidden;
-    padding-top: 10px;
-}
-
-.shakira-box i {
-    margin-left: 10px;
-    margin-right: 3px;
-    margin-top: 3px;
-}
-
-.shakira-box a {
-    text-decoration: none;
-}
-
-.shakira-box:hover {
-    cursor: pointer;
-}
-
-.shakira-box img {
-    width: 100%;
-    height: 100%;
-}
-
-.shakira-box .shakira-content {
-    margin-left: 8px;
-    width: 91.5%;
-    height: 80px;
-    top: -40px;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.6);
-    /*background-color: white;*/
-    color: white;
-    transition: top 0.5s;
-    -moz-transition: top 0.5s;
-    -webkit-transition: top 0.5s;
-    -o-transition: top 0.5s;
-    -ms-transition: top 0.5s;
-}
-
-.shakira-box .shakira-header {
-    letter-spacing: 1px;
-    height: 20px;
-    margin: 0;
-    font-size: 12pt;
-    padding: 0 5px;
-    text-align: center;
-}
-
-.shakira-box:hover .shakira-content {
-    top: -80px;
-}
-
 .clear {
     clear: both;
 }
@@ -429,19 +372,6 @@ body {
 
 .images-hover {
     box-shadow: 30px 20px 10px -10px gray;
-}
-
-/*icon tren anh*/
-.icon_0 {
-    width: 25px;
-    height: 25px;
-    margin-top: -231px;
-    position: absolute;
-}
-
-.icon_0 img {
-    width: 25px !important;
-    height: 25px !important;
 }
 
 #filter {

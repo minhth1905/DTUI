@@ -14,7 +14,9 @@ function onMockupLoaded(mockups) {
 
 function reload() {
     $("#template").empty();
-    randomMockup(_mockups, 20);
+    $("#template-phone").empty();
+    randomMockup(_mockups, 20, "#template");
+    randomMockup(_mockups, 20, "#template-phone");
 }
 
 var menu = $("#menu");
