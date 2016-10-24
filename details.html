@@ -5,13 +5,14 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logos/favicon_16x16.png">
-
+    
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/details.css">
+    <link rel="stylesheet" type="text/css" href="css/searchbar.css">
     <link rel="stylesheet" type="text/css" href="css/searchresponsive.css">
     <link rel="stylesheet" type="text/css" href="css/detailsresponsive.css">
     <link rel="stylesheet" type="text/css" href="css/font.css">
-
+    
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome-4.6.3/css/font-awesome.min.css"/>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script>
@@ -20,28 +21,28 @@
                 $('#menu-phone').slideToggle('slow');
             });
         });
-
+        
         function myFunction(x) {
             x.classList.toggle("change");
         }
         var elementPosition = $('#img-size').offset();
         var iScrollPos = 150;
-        $(window).scroll(function(){
-          var st = $(this).scrollTop();
-          if(window.pageYOffset > $('#img-size').offset().top + 1){
-            if(st > 150) {
-                $('#img-size').removeClass("static");
-                $('#img-size').addClass("fixed");
+        $(window).scroll(function () {
+            var st = $(this).scrollTop();
+            if (window.pageYOffset > $('#img-size').offset().top + 1) {
+                if (st > 150) {
+                    $('#img-size').removeClass("static");
+                    $('#img-size').addClass("fixed");
+                }
             }
-          }
-          else {
-            if(st <= 150) {
-                $('#img-size').removeClass("fixed");
-                $('#img-size').addClass("static");
+            else {
+                if (st <= 150) {
+                    $('#img-size').removeClass("fixed");
+                    $('#img-size').addClass("static");
+                }
             }
-          }
         });
-
+    
     </script>
 </head>
 <body>
@@ -57,15 +58,14 @@
                 </a>
             </div>
             <div id="top_banner">
-                <fieldset id="search">
-                    <input type="text" title="" id="input-search"/>
-                    <button id="searchBtn"></button>
+                <fieldset id="search" class="onmenu">
+                    <input type="text" title="" class="value-search" id="input-search"/>
+                    <button id="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </fieldset>
             </div>
             <div id="network">
                 <a href='http://www.facebook.com/sharer.php?s=100&p[url]=http://www.dtuisix.esy.es' rel='nofollow'><img
                         src="images/socials/facebook.png" target="_blank"></a>
-                <script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share' type='text/javascript'></script>
                 <a href="https://plus.google.com/share?url=http://www.dtuisix.esy.es"><img
                         src="images/socials/googleplus.png" class="img"></a>
                 <a href="http://www.stumbleupon.com/submit?url=http://www.dtuisix.esy.es"><img
@@ -125,7 +125,7 @@
                     <span class="triangle_down"></span>
                 </p>
             </a>
-
+            
             <ul style="margin-top: 22px;z-index: 10; border: 1px solid;">
                 <li id="show_1">
                     <a href="Search.html"><img src="images/Bricon.png">
@@ -240,7 +240,7 @@
                         <span>Flash Builder</span>
                     </a>
                 </li>
-
+            
             </ul>
         </div>
         <div class="menu-right">
@@ -283,8 +283,8 @@
         </div>
     </div>
     <!-- end -->
-
-
+    
+    
     <div class="clear"></div>
     <div id="main-details">
         <div id="detail-left">
@@ -375,7 +375,7 @@
                     <input type="textarea" name="cmt"/>
                 </div>
             </div>
-
+            
             <div class="cmt-demo">
                 <a href="#"><img src="images/user.png"
                                  width="8%" height="auto"></a>
@@ -437,8 +437,13 @@
         </div>
         <div id="detail-right">
             <div id="img-size" class="static">
-                <p><i class="fa fa-download" aria-hidden="true" style="font-size: 40px;"></i><span style="font-size: 20px; position: relative;top: -10px; left: 4%; font-weight: bold; color: white;">Free download Template</span></p>
-                <p style="text-align: center; font-size: 40px;"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i><span style="font-size: 20px; position: relative;top: -7px; left: 4%; font-weight: bold; color: #357613;">1456</span></p>
+                <p><i class="fa fa-download" aria-hidden="true" style="font-size: 40px;"></i><span
+                        style="font-size: 20px; position: relative;top: -10px; left: 4%; font-weight: bold; color: white;">Free download Template</span>
+                </p>
+                <p style="text-align: center; font-size: 40px;"><i class="fa fa-thumbs-o-up"
+                                                                   aria-hidden="true"></i><span
+                        style="font-size: 20px; position: relative;top: -7px; left: 4%; font-weight: bold; color: #357613;">1456</span>
+                </p>
             </div>
             <div class="more-Dtui height1">
                 <p>More from <span><a href="#">DTUI Team</a></span></p>
@@ -517,18 +522,23 @@
                     <a href="#"><img
                             src="https://s-media-cache-ak0.pinimg.com/236x/79/1c/50/791c50cd2042fb2f0be000e481d73870.jpg"></a>
                 </div>
-                <a href="#" id="vg">View More >></a>
+                <a href="#" id="vm">View More >></a>
             </div>
-
+        
         </div>
     </div>
     <div class="download-phone">
         <div class="download-left">
-            <p><i class="fa fa-download" aria-hidden="true" style="font-size: 40px;"></i><span style="font-size: 20px; position: relative;top: -10px; left: 4%; font-weight: bold; color: white;">Free download Template</span></p>
-
+            <p><i class="fa fa-download" aria-hidden="true" style="font-size: 40px;"></i><span
+                    style="font-size: 20px; position: relative;top: -10px; left: 4%; font-weight: bold; color: white;">Free download Template</span>
+            </p>
+        
         </div>
         <div class="download-right">
-            <p style="text-align: center; font-size: 40px; margin-top: 18px;"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i><span style="font-size: 20px; position: relative;top: -7px; left: 4%; font-weight: bold; color: #357613;">1456</span></p>
+            <p style="text-align: center; font-size: 40px; margin-top: 18px;"><i class="fa fa-thumbs-o-up"
+                                                                                 aria-hidden="true"></i><span
+                    style="font-size: 20px; position: relative;top: -7px; left: 4%; font-weight: bold; color: #357613;">1456</span>
+            </p>
         </div>
     </div>
     <div class="clear"></div>
@@ -552,10 +562,10 @@
                 Copyright © 2016 freepik.com
             </div>
         </div>
-
+    
     </div>
-    <script src="js/details.js"></script>
-    <script src="js/common.js"></script>
 </div>
+<script src="js/details.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>

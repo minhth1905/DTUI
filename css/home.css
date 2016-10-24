@@ -109,36 +109,6 @@ body {
     font-weight: bold;
 }
 
-#search {
-    padding: 0;
-    border: 0;
-    margin-top: 60px;
-}
-
-#search input[type="text"] {
-    float: left;
-    margin-left: 20%;
-    width: calc(60% - 52px);
-    height: 46px;
-    font-size: 24px;
-    font-weight: bold;
-    padding-left: 3%;
-}
-
-#search button {
-    float: left;
-    width: 52px;
-    height: 52px;
-    background-color: #1d60c0;
-    color: white;
-    font-size: 12pt;
-    border: 0;
-}
-
-#search button:hover {
-    cursor: pointer;
-}
-
 #popular_keyword ul {
     list-style-type: none;
     text-align: center;
@@ -190,8 +160,6 @@ body {
     height: 101px;
     background-color: white;
 }
-
-
 
 .cl {
     clear: both;

@@ -6,12 +6,13 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logos/favicon_16x16.png">
-
+    
     <link rel="stylesheet" type="text/css" href="css/search.css">
     <link rel="stylesheet" type="text/css" href="css/shakira.css">
+    <link rel="stylesheet" type="text/css" href="css/searchbar.css">
     <link rel="stylesheet" type="text/css" href="css/searchresponsive.css">
     <link rel="stylesheet" type="text/css" href="css/font.css">
-
+    
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome-4.6.3/css/font-awesome.min.css"/>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
@@ -28,11 +29,9 @@
                 </a>
             </div>
             <div id="top_banner">
-                <fieldset id="search">
+                <fieldset id="search" class="onmenu">
                     <input type="text" title="" class="value-search"/>
-                    <a href="#">
-                        <button></button>
-                    </a>
+                    <button id="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </fieldset>
             </div>
             <div id="network">
@@ -102,7 +101,7 @@
                     <i class="fa fa-caret-down" aria-hidden="true"></i>
                 </p>
             </a>
-
+            
             <ul style="margin-top: 22px;">
                 <li id="show_1" category="br">
                     <a href="#"><img src="images/icons/16x16/br.png">
@@ -222,7 +221,7 @@
                         <span>Flash Builder</span>
                     </a>
                 </li>
-
+            
             </ul>
         </div>
         <div class="menu-right">
@@ -265,23 +264,24 @@
         </div>
     </div>
     <div id="share">
-    <ul>
-        <li><a href='http://www.facebook.com/sharer.php?s=100&p[url]=http://www.dtuisix.esy.es' rel='nofollow'><img
-                        src="images/socials/facebook.png" target="_blank"></a></li>
-        <li><a href="https://plus.google.com/share?url=http://www.dtuisix.esy.es"><img
-        src="images/socials/googleplus.png" class="img"></a></li>
-        <li><a href="http://www.stumbleupon.com/submit?url=http://www.dtuisix.esy.es"><img
-                        src="images/socials/stumbleupon.png" class="img"></a></li>
-        <li><a href="http://twitter.com/intent/tweet?text=Free vectors, photos and PSD Downloads - Freepik&url=http://www.dtuisix.esy.es"><img
+        <ul>
+            <li><a href='http://www.facebook.com/sharer.php?s=100&p[url]=http://www.dtuisix.esy.es' rel='nofollow'><img
+                    src="images/socials/facebook.png" target="_blank"></a></li>
+            <li><a href="https://plus.google.com/share?url=http://www.dtuisix.esy.es"><img
+                    src="images/socials/googleplus.png" class="img"></a></li>
+            <li><a href="http://www.stumbleupon.com/submit?url=http://www.dtuisix.esy.es"><img
+                    src="images/socials/stumbleupon.png" class="img"></a></li>
+            <li>
+                <a href="http://twitter.com/intent/tweet?text=Free vectors, photos and PSD Downloads - Freepik&url=http://www.dtuisix.esy.es"><img
                         src="images/socials/twitter.png" class="img"></a></li>
-    </ul>
-   </div>
+        </ul>
+    </div>
     <div id="found-phone" style="font-weight: bold; text-align: center;font-size: 30px; margin-top: 20px;">
         <div class="number-template"></div>
         templates found
     </div>
     <div id="template-phone">
-        
+    
     </div>
 </div>
 <div id="found" style="font-weight: bold; text-align: center;font-size: 30px; margin-top: 20px;">

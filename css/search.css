@@ -40,42 +40,6 @@ body {
     padding-left: 10px;
 }
 
-#search {
-    margin-left: calc(50% - 340px);
-    padding-right: 0px;
-    border: 0px;
-    padding-top: 12px;
-    padding-left: 130px;
-}
-
-input[type="text"] {
-    float: left;
-    width: 290px;
-    height: 30.5px;
-    margin-left: 17%;
-    margin-top: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 3%;
-    border: 1px solid #DDD;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
-    border-radius: 0;
-}
-
-#search button {
-    float: left;
-    margin-top: 5px;
-    width: 44px;
-    height: 35px;
-    background: url("../images/icon-search.png") no-repeat 7px 4px;
-    background-color: #2363c3;
-    border: 0;
-}
-
-#search button:hover {
-    cursor: pointer;
-}
-
 #network {
     padding-top: 18px;
     float: right;
@@ -145,30 +109,6 @@ body {
     clear: both;
 }
 
-.icon-eye::before {
-    color: white;
-    content: '\e000';
-    font-family: 'feathericons';
-    padding: 2px 5px;
-    font-size: 14px;
-}
-
-.icon-paper-clip::before {
-    color: white;
-    content: '\e001';
-    font-family: 'feathericons';
-    padding: 2px 5px;
-    font-size: 14px;
-}
-
-.icon-heart::before {
-    color: white;
-    content: '\e024';
-    font-family: 'feathericons';
-    padding: 2px 5px;
-    font-size: 14px;
-}
-
 #main {
     height: 950px;
 }
@@ -182,17 +122,6 @@ body {
 #right {
     padding-right: 8%;
     float: right;
-}
-
-#text_footer {
-    float: left;
-    padding-top: 29px;
-    font-family: 'myFont';
-    font-weight: bold;
-    font-size: 28.54pt;
-    font-style: italic;
-    color: #d51d24;
-    word-spacing: 0.5px;
 }
 
 #text-intro {

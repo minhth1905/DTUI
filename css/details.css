@@ -22,48 +22,9 @@ body {
     padding-left: 10px;
 }
 
-#search {
-    margin-left: calc(50% - 340px);
-    padding-right: 0px;
-    border: 0px;
-    padding-top: 12px;
-    padding-left: 130px;
-}
-
 #template-img {
     width: 90%;
     padding-left: 5%;
-    /* height: 626px; */
-    height: same-as-width;
-
-}
-
-input[type="text"] {
-    float: left;
-    width: 290px;
-    height: 30.5px;
-    margin-left: 17%;
-    margin-top: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 3%;
-    border: 1px solid #DDD;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
-    border-radius: 0;
-}
-
-#search button {
-    float: left;
-    margin-top: 5px;
-    width: 44px;
-    height: 35px;
-    background: url("../images/icon-search.png") no-repeat 7px 4px;
-    background-color: #2363c3;
-    border: 0;
-}
-
-#search button:hover {
-    cursor: pointer;
 }
 
 /* end */
@@ -156,7 +117,7 @@ input[type="text"] {
 #detail-left {
     margin-top: 10px;
     /* border: 1px solid;*/
-   border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
     margin-left: 8%;
     width: 55%;
@@ -366,7 +327,8 @@ input[type="text"] {
     border: 1px solid #f5f8f9;
     border-radius: 5px;
     background-color: #f5f8f9;
-    position: fixed; top: 0px;
+    position: fixed;
+    top: 0px;
     width: 23%;
     margin-left: 1%;
     height: 150px;
@@ -382,6 +344,7 @@ input[type="text"] {
     margin-top: 0;
     background-color: #f5f8f9;
 }
+
 #img-size p:first-child {
     background-color: #56aa29;
     border-radius: 5px;
@@ -712,6 +675,7 @@ input[type="text"] {
     color: #357613;
     padding-left: 12px;
 }
+
 .download-phone {
     position: fixed;
     bottom: 0;
@@ -725,7 +689,6 @@ input[type="text"] {
     float: left;
     background-color: #56aa29;
 }
-
 
 .download-right {
     width: 20%;
